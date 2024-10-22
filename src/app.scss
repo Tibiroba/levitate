@@ -1,0 +1,281 @@
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+
+@import 'colors';
+
+
+
+/*
+
+
+FONTS
+
+
+*/
+
+
+@font-face {
+	font-family : 'Arciform';
+	src         : url(src/fonts/Arciform.woff2) format('woff2');
+	font-weight : 300;
+	font-style  : normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Comfortaa-Regular';
+	src        : url(src/fonts/Comfortaa-Regular.woff2) format('woff2');
+
+	font-weight : 600;
+	font-style  : normal;
+	font-display: swap;
+}
+
+.textBlue{
+	color:$roxo;
+}
+.txtNormal{
+	font-size: 1.25rem;
+}
+.fontNormal{
+	font-size: 1.5rem;
+	
+	letter-spacing: 1px;
+}
+.fontBig{
+	font-size: 2rem;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+.fontTitle{
+	font-size: 3rem;
+}
+
+/*
+
+	ESTILOS
+
+*/
+
+
+
+.carousel-item {
+	background     : no-repeat center center;
+	background-size: cover;
+	min-height     : 100vh;
+	height         : calc(50vh + 40px);
+}
+
+
+.content {
+	min-height      : calc(100vh - 300px);
+	// padding-top: 87px !important; 
+	background-color: $branco;
+	text-align      : center;
+
+	
+	
+}
+
+footer{
+
+	height:300px;
+	padding:5% 0;
+}
+.nav-link{
+	color:white;
+}
+.banner{
+	background     : url("img/BACKGROUND_BANNER.jpg") no-repeat center center;
+	background-size: cover;
+	min-height     : 80vh;
+	// height         : calc(50vh + 40px);
+	padding:5% 0;
+}
+#header{
+	background     : transparent;
+	z-index:1;
+}
+.btnPink{
+	background-color:$pink;
+	color:white;
+	border-radius:10px;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+.ctaText{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding:0px 5%;
+	ul{
+		padding:0;
+		list-style-type:none;
+		text-align:start;
+	}
+	
+}
+.whiteRow{
+	background-color:#f4f4f4;
+	
+	//padding:5% 0;
+}
+.blueBg{
+	background-color:$azul;
+}
+.bgRoxo{
+	background-color:#666cfe;
+}
+.greyBg{
+	background-color:#f4f4f4;
+}
+.listaCard{
+	list-style-type: none;
+	padding:0;
+	display:flex;
+	flex-direction:row;
+	justify-content: space-evenly;
+	text-align: center;
+	.card{
+		width:300px;
+		height: 200px;
+		text-align: center;
+		background:#f4f4f4;
+		align-items: center;
+		padding:5%;
+		-webkit-box-shadow: 10px 10px 41px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 41px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 41px 0px rgba(0,0,0,0.75);
+		span{
+			font-size:1.5rem;
+			font-weight: bold;
+		}
+	}
+	img{
+		
+		height:140px;
+	}
+
+}
+.backgroundLayerOne{
+	background: url("img/NUVEM_01.png") no-repeat top right;	
+	img{
+		max-width: 500px;
+	}
+}
+.backgroundLayer{
+	background: url("img/NUVEM_02.png") no-repeat bottom left;
+}
+.spacing{
+	padding:5% 0;
+}
+
+.listaBen{
+	ul{
+		padding:0;
+		list-style-type: disc;
+		margin:8px 20px;
+		li{
+			font-weight: bold;
+		}
+	}
+	display: flex;
+	flex-direction: row;
+	justify-content: start;
+	
+
+}
+.mulherSection{
+	min-height: 500px;
+}
+.imgMulher{
+	position: absolute;
+	right: -125px;
+	z-index: 999;
+	bottom:0;
+}
+.rowTransicao{
+	
+	padding: 5% 0;
+	;
+	h3{
+		font-size:2.5rem;
+		color:white;
+
+	}
+	p{
+		color:white;
+	}
+	img{
+		max-width: 130px;
+	}
+}
+.nuvemBgDup{
+	background: url("img/NUVEM_05.png") no-repeat top left;
+	min-height: 80vh;
+	// background-size: 250px;
+	.nuvemTwo{
+		background: url("img/NUVEM_04.png") no-repeat bottom right;
+		min-height: 80vh;
+		background-size: 700px;
+	}
+}
+.txtBox{
+	min-height: 300px;
+	
+	
+}
+.txtBoxAgua{
+	display: flex;
+    flex-direction: column;
+    text-align: end;
+    /* max-width: 300px; */
+    /* min-height: 200px; */
+    padding: 5% 0 0 0;
+	
+
+
+}
+.boxNuvem{
+
+}
+.nuvemRoxa{
+	background: url("img/NUVEM_06.png") no-repeat top left;
+	min-height: 100vh;
+// 	background-size: 250px;
+ }
+.nuvemRoxaTwo{
+	background: url("img/NUVEM_07.png") no-repeat center right;
+	min-height: 100vh;
+	// background-size: 250px;
+}
+.imgCientista{
+	max-width: 400px;
+}
+.customList{
+	list-style: none;
+	margin-top:25%
+}
+.listaIcons{
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	li{
+		width: 200px;
+		margin:0 8px;
+		img{
+			max-width: 100px;
+		}
+	}
+	
+}
+.sectionMicelar{
+	.nuvemRoxa{
+		min-height: 70vh;
+		
+	}
+}
+.txtBoxMicelar{
+	margin-top:20%;
+}
