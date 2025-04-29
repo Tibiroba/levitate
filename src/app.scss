@@ -15,41 +15,111 @@ FONTS
 
 
 @font-face {
-	font-family : 'Arciform';
-	src         : url(src/fonts/Arciform.woff2) format('woff2');
+	font-family : 'MyriadPro-Regular';
+	src         : url(src/fonts/MyriadPro-Regular.woff2) format('woff2');
 	font-weight : 300;
 	font-style  : normal;
 	font-display: swap;
 }
 
 @font-face {
-	font-family: 'Comfortaa-Regular';
-	src        : url(src/fonts/Comfortaa-Regular.woff2) format('woff2');
+	font-family: 'MyriadPro-Bold';
+	src        : url(src/fonts/MyriadPro-Bold.woff2) format('woff2');
 
 	font-weight : 600;
 	font-style  : normal;
 	font-display: swap;
 }
+*{
+	font-family: 'MyriadPro-Regular';
+}
+b,h3,h5, .fontBold{
+	font-family:'MyriadPro-Bold';
+}
 
+
+.textBoxMulher{
+	
+	display: flex
+	;
+		flex-direction: column;
+		justify-content: space-around;
+		height: 90vh;
+		padding: 0px 25% 0px 20%;
+		text-align: start;
+}
 .textBlue{
 	color:$roxo;
 }
+.textWhite{
+	color:white;
+}
+.textPink{
+	color:$pink;
+}
+.greyText{
+	color:#848381;
+}
 .txtNormal{
+	font-size: 1.5rem;
+}
+.txtSmall{
 	font-size: 1.25rem;
 }
 .fontNormal{
-	font-size: 1.5rem;
+	font-size: 2rem;
 	
 	letter-spacing: 1px;
 }
 .fontBig{
-	font-size: 2rem;
+	font-size: 2.75rem;
 	font-weight: bold;
 	letter-spacing: 1px;
 }
-.fontTitle{
-	font-size: 3rem;
+.fontGrande{
+	font-size:3.5rem;
+	font-family: 'MyriadPro-Bold';
+	font-weight: bold;
 }
+.fontTitle{
+	font-size: 4.5rem;
+}
+
+h1 {
+	font-size: 4.5rem;
+  }
+  
+  h2 {
+	font-size: 3.5rem;
+  }
+  
+  h3 {
+	font-size: 3rem;
+  }
+  
+  h4 {
+	font-size: 2.5rem;
+  }
+  
+  h5 {
+	font-size: 2rem;
+  }
+  
+  h6 {
+	font-size: 1.5rem;
+  }
+  
+  body {
+	font-size: 1rem;
+  }
+  
+  .small-text {
+	font-size: 0.875rem;
+  }
+  
+  .extra-small-text {
+	font-size: 0.75rem;
+  }
 
 /*
 
@@ -76,50 +146,85 @@ FONTS
 	
 	
 }
+.navbar-nav{
+	display: flex
+;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    width: 100%;
+    /* text-align: center; */
+    justify-content: center;
+
+	.nav-link{
+		font-size: 1.5rem;
+	}
+}
 
 footer{
 
-	height:300px;
+	// height:300px;
 	padding:5% 0;
 }
 .nav-link{
 	color:white;
 }
 .banner{
-	background     : url("img/BACKGROUND_BANNER.jpg") no-repeat center center;
-	background-size: cover;
-	min-height     : 80vh;
-	// height         : calc(50vh + 40px);
-	padding:5% 0;
+	background: url(img/BACKGROUND_BANNER.jpg) no-repeat center center;
+    background-size: cover;
+    min-height: 77vh;
+    padding: 22vh 0 0 0;
+}
+.produtoCta{
+	width: 590px !important;
 }
 #header{
 	background     : transparent;
 	z-index:1;
 }
 .btnPink{
-	background-color:$pink;
-	color:white;
-	border-radius:10px;
-	font-weight: bold;
-	letter-spacing: 1px;
+	background-color: #e83e8c;
+    display: block;
+    color: white;
+    border-radius: 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    width: 330px;
+    /* height: 70px; */
+    font-size: 1.5rem;
+    padding: 16px;
+    /* max-width: 30%; */
+    margin: 0 auto;
 }
 .ctaText{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding:0px 5%;
+	
 	ul{
 		padding:0;
 		list-style-type:none;
 		text-align:start;
+		
 	}
 	
+	
+}
+.listaCta{
+	li{
+		margin:32px 0px;
+	}
 }
 .whiteRow{
-	background-color:#f4f4f4;
+	background-color:#eeeeee;
 	
 	//padding:5% 0;
 }
+.whiteBg{
+	background-color:white;
+}
+
 .blueBg{
 	background-color:$azul;
 }
@@ -127,7 +232,7 @@ footer{
 	background-color:#666cfe;
 }
 .greyBg{
-	background-color:#f4f4f4;
+	background-color:#eeeeee;
 }
 .listaCard{
 	list-style-type: none;
@@ -136,16 +241,17 @@ footer{
 	flex-direction:row;
 	justify-content: space-evenly;
 	text-align: center;
+	margin-top:6px;
+
 	.card{
-		width:300px;
-		height: 200px;
+		width: 300px;
+		height: 300px;
 		text-align: center;
-		background:#f4f4f4;
+		background: #f4f4f4;
+		border-radius: 25px;
 		align-items: center;
-		padding:5%;
-		-webkit-box-shadow: 10px 10px 41px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 10px 41px 0px rgba(0,0,0,0.75);
-box-shadow: 10px 10px 41px 0px rgba(0,0,0,0.75);
+		padding: 15%;
+		box-shadow: 10px 10px 41px 0px rgba(0, 0, 0, 0.75);
 		span{
 			font-size:1.5rem;
 			font-weight: bold;
@@ -158,56 +264,70 @@ box-shadow: 10px 10px 41px 0px rgba(0,0,0,0.75);
 
 }
 .backgroundLayerOne{
-	background: url("img/NUVEM_01.png") no-repeat top right;	
-	img{
-		max-width: 500px;
-	}
+	background: url(img/NUVEM_01.png) no-repeat top right;
+    background-position-y: 78px;
+    background-position-x: 340px;
+	
 }
 .backgroundLayer{
-	background: url("img/NUVEM_02.png") no-repeat bottom left;
+	background: url(img/NUVEM_02.png) no-repeat bottom left;
+	background-position-y: 450px;
+    background-position-x: 110px;;
+
 }
+
 .spacing{
 	padding:5% 0;
 }
 
 .listaBen{
+	
 	ul{
 		padding:0;
 		list-style-type: disc;
 		margin:8px 20px;
 		li{
 			font-weight: bold;
+			font-size:2rem;
+		}
+		li::marker{
+			color:$roxo;
 		}
 	}
 	display: flex;
 	flex-direction: row;
-	justify-content: start;
+	justify-content: center;
 	
 
 }
 .mulherSection{
-	min-height: 500px;
+	min-height: 120vh;
+    background-position-x: 352px;
+    background-position-y: 560px;
+    background-size: 75%;
+
 }
 .imgMulher{
 	position: absolute;
-	right: -125px;
+	right: -200px;
 	z-index: 999;
 	bottom:0;
 }
+.imgCientista{
+	margin-left:32px;
+	width:300px;
+	margin:15% 0px;
+}	
 .rowTransicao{
 	
-	padding: 5% 0;
+	padding: 5vh 0;
 	;
-	h3{
-		font-size:2.5rem;
-		color:white;
-
-	}
+	
 	p{
 		color:white;
 	}
 	img{
-		max-width: 130px;
+		margin-top: 50px;
 	}
 }
 .nuvemBgDup{
@@ -216,28 +336,34 @@ box-shadow: 10px 10px 41px 0px rgba(0,0,0,0.75);
 	// background-size: 250px;
 	.nuvemTwo{
 		background: url("img/NUVEM_04.png") no-repeat bottom right;
-		min-height: 80vh;
-		background-size: 700px;
+		min-height: 110vh;
+		// background-size: 780px;
 	}
 }
 .txtBox{
 	min-height: 300px;
+	display:flex;
+	flex-direction: column;
 	
 	
 }
 .txtBoxAgua{
 	display: flex;
     flex-direction: column;
-    text-align: end;
+    text-align: start;
     /* max-width: 300px; */
     /* min-height: 200px; */
-    padding: 5% 0 0 0;
+    padding: 15% 0 0 0;
 	
 
 
 }
 .boxNuvem{
+	text-align:end;
+img{
+	margin: 0 48px 48px 0;
 
+}
 }
 .nuvemRoxa{
 	background: url("img/NUVEM_06.png") no-repeat top left;
@@ -249,9 +375,7 @@ box-shadow: 10px 10px 41px 0px rgba(0,0,0,0.75);
 	min-height: 100vh;
 	// background-size: 250px;
 }
-.imgCientista{
-	max-width: 400px;
-}
+
 .customList{
 	list-style: none;
 	margin-top:25%
@@ -278,4 +402,13 @@ box-shadow: 10px 10px 41px 0px rgba(0,0,0,0.75);
 }
 .txtBoxMicelar{
 	margin-top:20%;
+}
+
+#firstSection{
+	min-height: 70dvh;
+}
+.sectionDois{
+	min-height: 90dvh;
+	
+	padding: 5vh 0;
 }

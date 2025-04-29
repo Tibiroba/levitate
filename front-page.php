@@ -44,24 +44,24 @@
 
 <div class="content">
 
-  <section class="banner" id="firstSection">
+  <section class="banner" id="firstSection" >
 
   
-  <div class="container h-100" id="firstSection">
+  <div class="container p-0" id="firstSection">
 
     <div class="row ">
-      <div class="col-6">
+      <div class="col-6 p-0">
 
 
-        <div class="ctaText h-100">
-          <ul>
+        <div class="ctaText ">
+          <ul class="listaCta">
             <li>
-              <h1 style="color:white;">Sinta-se leve e confiante com Levitate</h1>
+              <h1 style="color:white; font-weight:bold; letter-spacing:3px;">Levite com Levitate!</h1>
             </li>
             <li>
-              <p class="fontNormal" style="color:white;">Você mecere um desodorante eficaz e seguro para pele de todo o corpo</p>
+              <h4 class="" style="color:white; letter-spacing:1px;"><strong style="text-decoration:underline;">Agua Micelar Corporal</strong> que<br> higieniza e previne odores<br> durante 24h</h4>
             </li>
-            <li><button class="btn btnPink">Experimente Levitate</button></li>
+            <li style="margin-top:100px;"><button class="btn btnPink">Experimente</button></li>
           </ul>
 
 
@@ -71,48 +71,44 @@
 
       </div>
       <div class="col-6">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/PRODUTO_BANNER.png" alt="">
+        <img class="produtoCta" src="<?php echo get_stylesheet_directory_uri(); ?>/img/PRODUTO_BANNER.png" alt="img_cta_locao">
       </div>
 
     </div>
   </div>
   </section>
 
-  <section class="whiteRow" id="2Section">
+  <section class="whiteRow" id="sectionTwo">
 
-  <div class="container">
+  <div class="container-fluid sectionDois">
 
-  <div class="row ">
-      <div class="col-6">
+  <div class="row">
+      <div class="col-6 p-0">
         <div class="backgroundLayer">
           <div class="backgroundLayerOne">
-          <img src="<?php echo get_stylesheet_directory_uri();?>/img/MULHERSALTANDO.png" alt="">
+          <img src="<?php echo get_stylesheet_directory_uri();?>/img/MULHERSALTANDO.png" alt="mulher_saltando">
           </div>
         </div>
   
       </div>
-      <div class="col-6">
+      <div class="col-6 p-0">
 
-      <div class="text-start " style="margin:20%; text-align:start; ">
-      <h2 class="fontBig">Loção Antiodores<br>Levitate</h2>
-        <p class="fontNormal">Poderosamente segura e eficaz para ser usada no corpo todo!</p>
-        <div class="listaBen">
+      <div class="text-start mt-5" style="text-align:center; ">
+      <h2 class="text-center mb-5">Levitate é especialista no controle de<br> <b class="textBlue">todos os odores corporais</b></h2>
+        
+        <div class="listaBen mb-5">
 
        
-        <ul>
+        <ul class="mb-5" style="text-align:start;">
           <li>Axilas</li>
-          <li>Bumbum</li>
+          <li>região íntima</li>
           <li>Pés</li>
-          <li>Seios</li>
-        </ul>
-        
-        <ul>
-        <li>Pescoço</li>
-          <li>Virilhas</li>
           <li>e mais!</li>
         </ul>
+        
+  
         </div>
-        <button class="btn btnPink w-100 mt-3">Experimente Levitate</button>
+        <button class="btn btnPink  mt-5">Experimente</button>
       </div>
         
       </div>
@@ -123,83 +119,80 @@
     
   
 
-  <div class="row h-100">
-      <div class="col-6  ">
+  <div class="row " style=" min-height:100vh;">
+      <div class="col-6  p-0">
 
-    <div class="boxBlue" style=" padding:5% 0 0 40%; text-align:start;">
-    <h3 class="textBlue fontBig" >Bloquea odor por 24 horas</h3>
-        <p class="fontNormal mt-3">Leve aonde for, e como auxílio do <strong>Lenço Levitate</strong>, como um banho a seco você pode higienizar qualquer parte do corpo que desejar</p>
-    </div>
+    
         
-        <div class="backgroundLayerOne mulherSection">
+       
+        <div class="boxBlue" style=" padding:18px 0 0 30%; text-align:start;">
+  
+        <p class=" fontNormal">Aplique a Àgua Micelar no <br><strong class="textBlue fontBig" >Lenço Levitate</strong> e higiene no seu corpo: </p>
+    </div>
 
           <img src="<?php echo get_stylesheet_directory_uri(  );?>/img/MULHER.png" alt="" class="imgMulher">
-        </div>
+        
       </div>
-      <div class="col-6 blueBg" style="padding:5% 0 0 0;">
-        <div class="boxNuvem">
-          <img src="<?php echo get_stylesheet_directory_uri() ?>/img/NUVEM_03.png" alt="">
-          <h4 style="color:white; font-size:2rem; letter-spacing:1px; font-weight:bold;">Em qualquer hora <br>do dia</h4>
-          <p class="txtNormal" style="color:white; letter-spacing:1px;">Ao acordar, depois da academia, quando<br> surge uma reunião ou um encontro<br> inesperado</p>
-          <button class="btn btnPink">Experimente Levitate</button>
-        </div>
+      <div class="col-6 blueBg" style="">
+        <!-- <div class="boxNuvem"> -->
+          <!-- <img src="< echo get_stylesheet_directory_uri() ?>/img/NUVEM_03.png" alt=""> -->
+          <div class="textBoxMulher">
+          <p class="fontNormal textWhite">Aplique a  <b class="fontBig">Água Micelar</b><br> no  <b>Lenço Levitate</b> e  higienize seu corpo:</p>
+          <p class="fontNormal textWhite"><b class="fontBig">Após o banho,</b> para prevenção de odores;</p>
+          <p class="fontNormal textWhite">Ou quando sentir necessidades de revitaliza-lo, <b class="fontBig">ao longo do dia</b></p>
+          <button class="btn btnPink mt-5"  >Experimente</button>
+          </div>
+        
+        <!-- </div> -->
+        
       </div>
     </div>
   </div>
   </section>
 
-    
-
-
-    <section class="bgRoxo rowTransicao">
-
-    <div class="container">
-    <div class="row ">
-      <div class="col-8">
-        <h3>Fórmula baseada em<br> estudos científicos</h3>
-        <p class="fontNormal">Com eficácia e segurança comprovadas</p>
-      </div>
-
-      <div class="col-4">
-        <img src="<?php echo get_stylesheet_directory_uri() ?>/img/CHECK_ICONE.png" alt="">
-      </div>
-    </div>
-    </div>
-
+    <section class="rowTransicao bgRoxo" style="">
+      <h3 class="textWhite fontBig" >Fórmula baseada em estudos científicos</h3>
     </section>
 
-    <section class="greyBg" style="padding:5%">
+
+ 
+    <section class="whiteBg" style="">
       <div class="container">
       <div class="row ">
       <div class="col-6">
 
       <div class="txtBoxAgua">
-      <p class="fontNormal">A <strong>Água Micelar levitate</strong> foi desenvolvida por uma equipe de médicos e aprimorada pelos alunos e professores da <b>Farma junior</b><a href="#">(Saiba mais)</a></p>
-        <button class="btn btnPink">Experimente Levitate</button>
+      <ul style="padding:0; list-style-type:none;">
+        <li class="fontNormal "><b>Hipoeralergênica,</b></li>
+        <li class="fontNormal "><b>Dermatologicamente e</b></li>
+        <li class="fontNormal "><b>Ginecologicamente</b></li>
+        <li class="fontNormal "><b>Testada</b></li>
+      </ul>
+        <button class="btn btnPink">Experimente</button>
       </div>
       
 
       </div>
 
       <div class="col-6">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/CIENTISTA.png" alt="" class="imgCientista">
+        <img src="
+         <?php echo get_stylesheet_directory_uri();?>/img/CIENTISTA.png" alt="" class="imgCientista">
       </div>
     </div>
       </div>
-    </section>
+    </section> 
 
     
 
-    <section class="whiteRow nuvemBgDup">
-      <div class="nuvemTwo">
-
+    <section class="whiteRow ">
       
-    <div class="container" style="padding:5% 0;">
+      
+    <div class="container greyBg" style="padding:17vh 0;">
     <div class="row ">
       <div class="col-12">
-        <div class="txtBox">
-        <h2 class="textBlue">Super dicas de Higienização Corporal</h2>
-          <p class="fontNormal"> para que você tenha segurança de que não passará por situações desagradáveis</p>
+        <div class="" style="text-align: center;" >
+        <p class="fontBig">Clique nos botões abaixo e<br> conheça <b class="textPink fontGrande">DICAS LEVITATE</b> para:</p>
+         
         </div>
 </div>
   <div class="col-12">
@@ -208,27 +201,27 @@
         <ul class="listaCard">
           <li>
             <div class="card">
-              <img  src="<?php echo get_stylesheet_directory_uri();?>/img/ICONEAXILA.png" alt="">
-              <span>Bromidrose nas axilas</span>
+              <img  src="<?php echo get_stylesheet_directory_uri();?>/img/ICONEAXILA.png" alt="ICONEAXILA">
+              <span>Bromidrose nas axilas - Cecê</span>
             </div>
           </li>
           <li>
             <div class="card">
-              <img  src="<?php echo get_stylesheet_directory_uri();?>/img/ICONEFEMININO.png" alt="">
-              <span>Higiene Feminina</span>
+              <img  src="<?php echo get_stylesheet_directory_uri();?>/img/ICONEFEMININO.png" alt="ICONEFEMININO">
+              <span>Bromidrose nos pés - Chulé</span>
             </div>
           </li>
           <li>
             <div class="card">
-              <img  src="<?php echo get_stylesheet_directory_uri ();?>/img/ICONEMASCULINO.png" alt="">
-              <span>Higiene Masculina</span>
+              <img  src="<?php echo get_stylesheet_directory_uri();?>/img/ICONEMASCULINO.png" alt="ICONEMASCULINO">
+              <span>Higiene íntima</span>
             </div>
           </li>
         </ul>
         </div>
       </div>
     </div>
-    </div>
+   
     </div>
     </section>
 
@@ -237,108 +230,145 @@
 
   <div class="container">
 
-    <div class="row ">
-      <h3>Como a Água Micelar Antiodores Levitate funciona?</h3>
+    <div class="row  text-center">
+     <h3 class="w-100 textWhite fonteBig">Levitate cuida da pele através dos ativos:</h3>
     </div>
   </section>
-  
-  <section class="whiteRow" style="max-height: 80vh;">
-    <div class="nuvemRoxa">
-      <div class="nuvemRoxaTwo">
-      <div class="container spacing">
 
+  <section class="whiteRow " style="max-height: 80vh;" id="niami">
     
-<div class="row ">
- 
-    
-   
-  
-  <div class="col-6">
-  <p style="font-size:1.5rem">Nossa fórmula contém <b>tensoativos suaves</b>, que <b>removem as impurezas</b> da pele.</p>
-    <p style="font-size:1.5rem">Ela bloqueia a formação de odores através dos ativos:</p>
-    <div class="txtBox">
-    <p class="fontBig textBlue">> Symdeo B125</p>
-    <span class="fontNormal mt-3">Combate as bactérias causadras dos odores;</span>
-    <p class="fontBig textBlue">> Trietilcitrato</p>
-    <span class="fontNormal mt-3">Tem ação enzimática que impede a decomposição do suor.</span>
-
-    </div>
-   
-  </div>
-  <div class="col-6">
-    <img src="<?php echo get_stylesheet_directory_uri();?>/img/ICONEQUIMICA.png" alt="">
-  </div>
-  
-</div>
-</div>
-      </div>
-    </div>
-   
-  </div>
-  </section >
-  
-    
-  <section class="bgRoxo rowTransicao">
-    <div class="container">
-    <div class="row ">
-      <h3>Componentes selecionados, até para a pele mais sensível</h3>
-    </div>
-  </section>
-    
-
-  <section class="whiteRow  nuvemRoxa spacing" style="max-height: 80vh;" id="niami">
-    <div class="nuvemRoxaTwo">
 
     
   <div class="container">
   <div class="row ">
         <div class="col-6">
-        <img src="<?php echo get_stylesheet_directory_uri ();?>/img/MULHERSORRINDO.png" alt="">
+        <img src="<?php echo get_stylesheet_directory_uri ();?>/img/MULHERSORRINDO.png" alt="MULHERSORRINDO.png" style="width: 300px;
+    margin: 22% 0px;">
         </div>
 
         <div class="col-6">
           <ul class="customList">
             <li>
             <p class="fontBig textBlue mt-3">> Niacinamida</p>
-              <span class="fontNormal">Clareia e uniformiza o tom da pele;</span>
+              <span class="fontNormal">Uniformiza o tom da pele;</span>
             </li>
             <li>
             <p class="fontBig textBlue  mt-3">> Ácido lático</p>
-              <span class="fontNormal">Regula o Ph cutâneo;</span>
+              <span class="fontNormal">Regula o pH;</span>
             </li>
             <li>
-            <p class="fontBig textBlue  mt-3">> D'Pantenol, Óleo de coco e extrato de Aloe Vera</p>
+            <p class="fontBig textBlue  mt-3">> Pantenol e Aloe Vera</p>
               <span class="fontNormal">Acalmam e coonferem hidratação.</span>
             </li>
               
           </ul>
         </div>
-    </div>
+ 
   </div>
   </div>
   </section>
+  
+ 
+  
+    
+  <section class="bgRoxo rowTransicao">
+    <div class="container">
+    <div class="row text-center">
+      <h3 class="w-100 textWhite fontBig">Fórmula livre de <b>alumínio, Álcool e Parabenos</b></h3>
+    </div>
+  </section>
+
+  <section class="whiteRow" style="min-height: 70vh; padding: 5% 0px;">
+   
+   <div class="container ">
+
+ 
+<div class="row ">
+
+ 
+
+
+<div class="col-6">
+
+<div class="txtBox text-center">
+<p class="fontNormal  my-5" >A Água Micelar remove as impurezas através de Micelas.</p>
+ <p class="fontNormal  my-5">E combate as bactérias causadoras dos maus odores, preservando o microbioma saudável da pele</p>
+
+ <button class="btn btnPink mt-5">Experimente</button>
+</div>
+
+
+
+</div>
+<div class="col-6">
+ <img src="<?php echo get_stylesheet_directory_uri();?>/img/ICONEQUIMICA.png" alt="">
+</div>
+
+</div>
+</div>
+   
+
+</div>
+</section >
+
+<section class="bgRoxo rowTransicao">
+    <div class="container">
+    <div class="row text-center">
+      <h3 class="w-100 textWhite fontBig">Levitate te faz setir <b>Leve e confiante!</b></h3>
+    </div>
+  </section>
+<!-- <section class="userFeedback">
+  <div class="container">
+    <div class="row">
+      php
+      // Start The Loop
+      if (have_posts()) :
+        while (have_posts()) : the_post(); ?>
+          <div class="col-12 col-md-6">
+            <div class="feedback-box">
+              <h3 class="feedback-title">php the_title(); ?></h3>
+              <div class="feedback-content">
+                php the_excerpt(); ?>
+              </div>
+              <a href="php the_permalink(); ?>" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        php endwhile;
+      else : ?>
+        <p>No feedback available at the moment.</p>
+      php endif; ?>
+    </div>
+  </div>
+</section>
+     -->
+
+  
 
     
-  <section class="blueBg  sectionMicelar" style="max-height:80vh;" >
-  <div class="nuvemRoxaTwo">
+  <section class="blueBg  sectionMicelar" style="padding:5% 0px;" >
+  <!-- <div class="nuvemRoxaTwo"> -->
 
   
     
   <div class="container">
     <div class="row">
-    <div class="col-12 ">
-      <div class="txtBoxMicelar">
-      <p class="fontBig" style="color:white;">Água Micelar Levitate<br><b>Primeira e Única no Brasil</b></p>
-        <span class="fontNormal" style="color:white;"><b>Levitate</b> mudou a forma de lidarmos com odores corporais</span>
-        <span class="fontNormal" style="color:white;">Opção de <strong>higiene rápida</strong> que pode ser usada no corpo todo e <b>previne odores.</b></span>
-        <p class="fontBig" style="color:white;">Por que você merece estar leve e confiante o dia todo!</p>
+      <div class="col-6">
+      <img src="<?php echo get_stylesheet_directory_uri();?>/img/PRODUTO_BANNER.png" alt="">
       </div>
- 
+    <div class="col-6 ">
+
+    <div class="txtBox text-center my-3">
+    <h3 class="textWhite">Água Micelar Coportal Levitate</h3>
+        <p class="fontNormal fontBold textWhite my-3">Primeira e única que higieniza e previne <br> <b class="fontBig fontBold">Todos OS ODORES durante 24h</b></p>
+        <p class="fontBig fontBold textWhite my-3">Levite com Levitate</p>
+        <button class="btn btnPink">Experimente</button>
+    </div>
+        
   </div>
     </div>
   
   </div>
-  </div>
+  <!-- </div> -->
 </section>
     
 
@@ -348,15 +378,18 @@
     <div class="row">
 
     
-    <div class="col-12">
+    <div class="col-12 text-center">
+      <p  class="textWhite fontBig" style="text-align:center;" >Nossos Selos</p>
+    </div>
+    <div class="col-12"> 
     <ul class="listaIcons">
       
-      <li><img src="<?php echo get_stylesheet_directory_uri(  );?>/img/ICONE_DERMATOLOGICAMENTETESTADO.png" alt=""><p>Dermatologicamente testado</p></li>
-      <li><img src="<?php echo get_stylesheet_directory_uri(  );?>/img/ICONE_ACEITABILIDADE.png" alt=""><p>Aceitabilidade Ginecológica</p></li>
-      <li><img src="<?php echo get_stylesheet_directory_uri(  );?>/img/ICONE_HIPOALERGENICA.png" alt=""><p>Hipoalergênica</p></li>
-      <li><img src="<?php echo get_stylesheet_directory_uri(  );?>/img/ICONE_ROUPAS.png" alt=""><p>Não macha roupas</p></li>
-      <li><img src="<?php echo get_stylesheet_directory_uri(  );?>/img/ICONE_VEGAN.png" alt=""><p>Vegano, e sem crueldade animal</p></li>
-      <li><img src="<?php echo get_stylesheet_directory_uri(  );?>/img/ICONE_ALUMINIO.png" alt=""><p>Não contém alumínio</p></li>
+      <li><img src="<?php echo get_stylesheet_directory_uri(  );?>/img/ICONE_DERMATOLOGICAMENTETESTADO.png" alt=""><p class="fontBold txtSmall textWhite">Dermatologicamente Testada</p></li>
+      <li><img src="<?php echo get_stylesheet_directory_uri(  );?>/img/ICONE_ACEITABILIDADE.png" alt=""><p class="fontBold txtSmall textWhite">Ginecológicamente Testada</p></li>
+      <li><img src="<?php echo get_stylesheet_directory_uri(  );?>/img/ICONE_HIPOALERGENICA.png" alt=""><p class="fontBold txtSmall textWhite">Hipoalergênica</p></li>
+      <!-- <li><img src="php echo get_stylesheet_directory_uri(  );?>/img/ICONE_ROUPAS.png" alt=""><p class="fontBold txtSmall textWhite">Não macha roupas</p></li> -->
+      <li><img src="<?php echo get_stylesheet_directory_uri(  );?>/img/ICONE_VEGAN.png" alt=""><p class="fontBold txtSmall textWhite">Vegano, e sem crueldade animal</p></li>
+      <li><img src="<?php echo get_stylesheet_directory_uri(  );?>/img/ICONE_ALUMINIO.png" alt=""><p class="fontBold txtSmall textWhite">Não contém alumínio</p></li>
     </ul>
     </div>
     </div>

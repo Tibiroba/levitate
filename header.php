@@ -49,16 +49,16 @@
       <div class="collapse navbar-collapse" >
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#">PRODUTOS<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Sobre nós</a>
+            <a class="nav-link" href="#">DICAS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Produtos</a>
+            <a class="nav-link" href="#">SOBRE NÓS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contato</a>
+            <a class="nav-link" href="#">MINHA CONTA</a>
           </li>
        
           <!-- <li class="nav-item">
