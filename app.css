@@ -9999,15 +9999,22 @@ FONTS
 */
 @font-face {
   font-family: "MyriadPro-Regular";
-  src: url(src/fonts/MyriadPro-Regular.woff2) format("woff2");
+  src: url(src/fonts/MyriadPro-Regular.otf) format("opentype");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "MyriadPro-Bold";
-  src: url(src/fonts/MyriadPro-Bold.woff2) format("woff2");
+  src: url(src/fonts/MyriadPro-Bold.otf) format("opentype");
   font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "MyriadPro-Semibold";
+  src: url(src/fonts/MyriadPro-Semibold.otf) format("opentype");
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
@@ -10024,7 +10031,7 @@ b, h3, h5, .fontBold {
   flex-direction: column;
   justify-content: space-around;
   height: 90vh;
-  padding: 0px 25% 0px 20%;
+  padding: 25px 25% 0px 20%;
   text-align: start;
 }
 
@@ -10054,7 +10061,20 @@ b, h3, h5, .fontBold {
 
 .fontNormal {
   font-size: 2rem;
+  font-family: "MyriadPro-Regular";
   letter-spacing: 1px;
+}
+
+.fontNormalPlus {
+  font-size: 2.25rem;
+  font-family: "MyriadPro-Regular";
+}
+
+.fontBigMinus {
+  font-size: 2.5rem;
+  font-family: "MyriadPro-Bold";
+  letter-spacing: 2px;
+  font-weight: 500;
 }
 
 .fontBig {
@@ -10063,8 +10083,20 @@ b, h3, h5, .fontBold {
   letter-spacing: 1px;
 }
 
+.fontBigPlus {
+  font-size: 3rem;
+  font-family: "MyriadPro-Bold";
+  letter-spacing: 1px;
+}
+
 .fontGrande {
   font-size: 3.5rem;
+  font-family: "MyriadPro-Bold";
+  font-weight: bold;
+}
+
+.fontXl {
+  font-size: 4rem;
   font-family: "MyriadPro-Bold";
   font-weight: bold;
 }
@@ -10075,26 +10107,32 @@ b, h3, h5, .fontBold {
 
 h1 {
   font-size: 4.5rem;
+  font-family: "MyriadPro-Semibold";
 }
 
 h2 {
   font-size: 3.5rem;
+  font-family: "MyriadPro-Semibold";
 }
 
 h3 {
   font-size: 3rem;
+  font-family: "MyriadPro-Semibold";
 }
 
 h4 {
   font-size: 2.5rem;
+  font-family: "MyriadPro-Semibold";
 }
 
 h5 {
   font-size: 2rem;
+  font-family: "MyriadPro-Semibold";
 }
 
 h6 {
   font-size: 1.5rem;
+  font-family: "MyriadPro-Semibold";
 }
 
 body {
@@ -10128,17 +10166,32 @@ body {
 }
 
 .navbar-nav {
+  width: 1300px;
+  /* Set maximum width */
+  margin: 0 auto;
+  /* Center the navbar horizontally */
   display: flex;
-  flex-direction: column;
-  padding-left: 0;
-  margin-bottom: 0;
-  list-style: none;
-  width: 100%;
-  /* text-align: center; */
-  justify-content: center;
+  /* Ensure proper alignment of items */
+  justify-content: space-between;
+  /* Center the items inside the navbar */
 }
 .navbar-nav .nav-link {
+  padding-top: 10px;
   font-size: 1.5rem;
+}
+
+.headerLine {
+  display: inline-block;
+  /* Ensure it fits inside the navbar */
+  width: 2px;
+  /* Set the thickness of the vertical line */
+  height: 100%;
+  /* Set the height of the vertical line */
+  background-color: white;
+  /* Set the color of the line */
+  border: none;
+  /* Remove default border */
+  margin: 0 10px;
 }
 
 footer {
@@ -10149,15 +10202,22 @@ footer {
   color: white;
 }
 
+#navbarsExampleDefault {
+  background: #39C4D9;
+  height: 120px;
+}
+
 .banner {
   background: url(img/BACKGROUND_BANNER.jpg) no-repeat center center;
   background-size: cover;
   min-height: 77vh;
-  padding: 22vh 0 0 0;
 }
 
 .produtoCta {
-  width: 590px !important;
+  width: 600px !important;
+  height: 600px !important;
+  float: left;
+  margin-left: 30px;
 }
 
 #header {
@@ -10169,21 +10229,25 @@ footer {
   background-color: #e83e8c;
   display: block;
   color: white;
-  border-radius: 25px;
+  border-radius: 35px;
   font-weight: bold;
   letter-spacing: 1px;
-  width: 330px;
+  width: 400px;
   /* height: 70px; */
-  font-size: 1.5rem;
-  padding: 16px;
+  font-size: 1.75rem;
+  /* padding: 17px; */
   /* max-width: 30%; */
-  margin: 0 auto;
+  /* margin: 10px 0px; */
+  height: 70px;
+  /* margin-top: 64px; */
+  letter-spacing: 3px;
 }
 
 .ctaText {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
+  margin-top: 65px;
 }
 .ctaText ul {
   padding: 0;
@@ -10192,7 +10256,7 @@ footer {
 }
 
 .listaCta li {
-  margin: 32px 0px;
+  margin: 30px 0px 70px 0px;
 }
 
 .whiteRow {
@@ -10220,22 +10284,20 @@ footer {
   padding: 0;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   text-align: center;
-  margin-top: 6px;
+  margin: 40px 0 65px 0;
 }
 .listaCard .card {
-  width: 300px;
-  height: 300px;
+  width: 315px;
+  height: 305px;
   text-align: center;
-  background: #f4f4f4;
+  background: white;
   border-radius: 25px;
   align-items: center;
-  padding: 15%;
-  box-shadow: 10px 10px 41px 0px rgba(0, 0, 0, 0.75);
 }
 .listaCard .card span {
-  font-size: 1.5rem;
+  font-size: 2.25rem;
   font-weight: bold;
 }
 .listaCard img {
@@ -10244,14 +10306,14 @@ footer {
 
 .backgroundLayerOne {
   background: url(img/NUVEM_01.png) no-repeat top right;
-  background-position-y: 78px;
-  background-position-x: 340px;
+  background-position-y: 90px;
+  background-position-x: 860px;
 }
 
 .backgroundLayer {
   background: url(img/NUVEM_02.png) no-repeat bottom left;
   background-position-y: 450px;
-  background-position-x: 110px;
+  background-position-x: 630px;
 }
 
 .spacing {
@@ -10266,11 +10328,11 @@ footer {
 .listaBen ul {
   padding: 0;
   list-style-type: disc;
-  margin: 8px 20px;
+  padding-right: 100px;
 }
 .listaBen ul li {
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 .listaBen ul li::marker {
   color: #666cfe;
@@ -10288,16 +10350,17 @@ footer {
   right: -200px;
   z-index: 999;
   bottom: 0;
+  width: 760px;
 }
 
 .imgCientista {
-  margin-left: 32px;
-  width: 300px;
-  margin: 15% 0px;
+  float: right;
+  width: 75%;
+  /* margin: 15% 0px; */
 }
 
 .rowTransicao {
-  padding: 5vh 0;
+  padding: 7vh 0;
 }
 .rowTransicao p {
   color: white;
@@ -10322,12 +10385,12 @@ footer {
 }
 
 .txtBoxAgua {
+  float: right;
   display: flex;
   flex-direction: column;
   text-align: start;
   /* max-width: 300px; */
   /* min-height: 200px; */
-  padding: 15% 0 0 0;
 }
 
 .boxNuvem {
@@ -10347,9 +10410,16 @@ footer {
   min-height: 100vh;
 }
 
+#MULHERSORRINDO {
+  float: right;
+  width: 400px;
+  margin: 72px -20px 0 0px;
+  height: 517px;
+}
+
 .customList {
   list-style: none;
-  margin-top: 25%;
+  padding: 35px 0 0 110px;
 }
 
 .listaIcons {
@@ -10376,9 +10446,10 @@ footer {
 
 #firstSection {
   min-height: 70dvh;
+  padding: 0px 0px 50px 0px;
 }
 
 .sectionDois {
   min-height: 90dvh;
-  padding: 5vh 0;
+  padding: 10px 0px;
 }
