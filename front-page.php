@@ -84,12 +84,12 @@
 
   <div class="row">
       <div class="col-6 p-0">
-        <div class="backgroundLayer h-100 w-100" style="float:right;">
-          <div class="backgroundLayerOne h-100  ">
-          <img style="height:690px; float:right;" src="<?php echo get_stylesheet_directory_uri();?>/img/MULHERSALTANDO.png" alt="mulher_saltando">
-          </div>
+        <!-- <div class="backgroundLayer h-100 w-100" style="float:right;">
+          <div class="backgroundLayerOne h-100  "> -->
+          <img class="mulherSaltando"  src="<?php echo get_stylesheet_directory_uri();?>/img/MULHERSALTANDO.png" alt="mulher_saltando">
+          <!-- </div>
         </div>
-  
+   -->
       </div>
       <div class="col-6 p-0">
 
@@ -277,13 +277,13 @@
   
     
   <section class="bgRoxo rowTransicao">
-    <div class="container">
+    <div class="container-fluid">
     <div class="row text-center">
       <h3 class="w-100 textWhite fontGrande">Fórmula livre de <b>Alumínio, Álcool e Parabenos</b></h3>
     </div>
   </section>
 
-  <section class="whiteRow" style="min-height: 70vh; padding: 5% 0px;">
+  <section class="whiteRow" style="min-height: 108vh; padding:110px 0 20px 0;">
    
    <div class="container ">
 
@@ -296,8 +296,8 @@
 <div class="col-6">
 
 <div class="txtBox text-center">
-<p class="fontNormal  my-5" >A Água Micelar remove as impurezas através de Micelas.</p>
- <p class="fontNormal  my-5">E combate as bactérias causadoras dos maus odores, preservando o microbioma saudável da pele</p>
+<p class="fontNormalPlus mb-5" >A Água Micelar remove as impurezas através de Micelas.</p>
+ <p class="fontNormalPlus mb-5">E combate as bactérias causadoras dos maus odores, preservando o microbioma saudável da pele</p>
 
  <button class="btn btnPink mt-5">Experimente</button>
 </div>
@@ -317,56 +317,98 @@
 </section >
 
 <section class="bgRoxo rowTransicao">
-    <div class="container">
+    <div class="container-fluid">
     <div class="row text-center">
-      <h3 class="w-100 textWhite fontBig">Levitate te faz setir <b>Leve e confiante!</b></h3>
+      <h3 class="w-100 textWhite fontGrande">Levitate te faz setir <b>Leve e confiante!</b></h3>
     </div>
   </section>
-<!-- <section class="userFeedback">
+
+
+
+  <!-- <section class="userFeedback">
   <div class="container">
     <div class="row">
       php
-      // Start The Loop
-      if (have_posts()) :
-        while (have_posts()) : the_post(); ?>
-          <div class="col-12 col-md-6">
+      // Query posts with the 'feedback' meta key
+      $args = array(
+        'post_type' => 'post', // Adjust if you're using a custom post type
+        'meta_query' => array(
+          array(
+            'key' => 'feedback', // Custom meta key to identify feedback posts
+            'value' => '1', // Value to filter feedback posts
+            'compare' => '='
+          )
+        ),
+        'posts_per_page' => 10, // Limit the number of posts
+      );
+      $feedback_posts = new WP_Query($args);
+
+      if ($feedback_posts->have_posts()) :
+        while ($feedback_posts->have_posts()) : $feedback_posts->the_post(); ?>
+          <div class="col-6 col-md-4">
             <div class="feedback-box">
+              Display featured image 
+              <div class="feedback-photo">
+                php
+                if (has_post_thumbnail()) {
+                  the_post_thumbnail('medium', ['class' => 'img-fluid']);
+                } else {
+                  echo '<img src="' . esc_url(get_template_directory_uri() . '/assets/default-avatar.png') . '" class="img-fluid" alt="Default Image">';
+                }
+                ?>
+              </div>
+
+               Display post title 
               <h3 class="feedback-title">php the_title(); ?></h3>
+
+               Display stars (post meta) 
+              <div class="feedback-stars">
+                php
+                $stars = get_post_meta(get_the_ID(), 'stars', true); // Custom meta for stars
+                if ($stars) {
+                  for ($i = 0; $i < $stars; $i++) {
+                    echo '<span class="star">&#9733;</span>'; // Unicode star
+                  }
+                } else {
+                  echo '<p>No star rating available.</p>'; // Fallback if stars meta is missing
+                }
+                ?>
+              </div>
+
+               Display post excerpt 
               <div class="feedback-content">
                 php the_excerpt(); ?>
               </div>
-              <a href="php the_permalink(); ?>" class="btn btn-primary">Read More</a>
             </div>
           </div>
         php endwhile;
+        wp_reset_postdata(); // Reset the global post object
       else : ?>
-        <p>No feedback available at the moment.</p>
+        <p>No feedback posts available at the moment.</p>
       php endif; ?>
     </div>
   </div>
-</section>
-     -->
-
+</section> -->
   
 
     
-  <section class="blueBg  sectionMicelar" style="padding:5% 0px;" >
+  <section class="blueBg  sectionMicelar" style="padding:85px 0px 50px 0;" >
   <!-- <div class="nuvemRoxaTwo"> -->
 
   
     
   <div class="container">
     <div class="row">
-      <div class="col-6">
-      <img src="<?php echo get_stylesheet_directory_uri();?>/img/PRODUTO_BANNER.png" alt="">
+      <div class="col-4">
+      <img src="<?php echo get_stylesheet_directory_uri();?>/img/PRODUTO_SINGLE.png" alt="PRODUTO_SINGLE" id="produtoSingle">
       </div>
-    <div class="col-6 ">
+    <div class="col-8 ">
 
     <div class="txtBox text-center my-3">
-    <h3 class="textWhite">Água Micelar Coportal Levitate</h3>
-        <p class="fontNormal fontBold textWhite my-3">Primeira e única que higieniza e previne <br> <b class="fontBig fontBold">Todos OS ODORES durante 24h</b></p>
-        <p class="fontBig fontBold textWhite my-3">Levite com Levitate</p>
-        <button class="btn btnPink">Experimente</button>
+    <p class="textWhite fontGrande">Água Micelar Coportal Levitate</p>
+        <p class="fontNormal fontBold textWhite my-3">Primeira e única que<br> higieniza e previne <br> <b class="fontBig">Todos OS ODORES<br> durante 24h</b></p>
+        <p class="fontGrande fontBold textWhite my-3">LEVITE COM LEVITATE</p>
+        <button class="btn btnPink mt-5">Experimente</button>
     </div>
         
   </div>
@@ -378,28 +420,84 @@
     
 
 
-<section class="bgRoxo rowTransicao"> 
-  <div class="container">
-    <div class="row">
+<section class="bgRoxo "> 
+  <div class="container-fluid">
+    <div class="row rowLista" style="">
 
     
     <div class="col-12 text-center">
-      <p  class="textWhite fontBig" style="text-align:center;" >Nossos Selos</p>
+      <p  class="textWhite fontGrande " style="text-align:center;" >Nossos Selos</p>
     </div>
     <div class="col-12"> 
     <ul class="listaIcons">
       
-      <li><img src="<?php echo get_stylesheet_directory_uri(  );?>/img/ICONE_DERMATOLOGICAMENTETESTADO.png" alt=""><p class="fontBold txtSmall textWhite">Dermatologicamente Testada</p></li>
-      <li><img src="<?php echo get_stylesheet_directory_uri(  );?>/img/ICONE_ACEITABILIDADE.png" alt=""><p class="fontBold txtSmall textWhite">Ginecológicamente Testada</p></li>
-      <li><img src="<?php echo get_stylesheet_directory_uri(  );?>/img/ICONE_HIPOALERGENICA.png" alt=""><p class="fontBold txtSmall textWhite">Hipoalergênica</p></li>
-      <!-- <li><img src="php echo get_stylesheet_directory_uri(  );?>/img/ICONE_ROUPAS.png" alt=""><p class="fontBold txtSmall textWhite">Não macha roupas</p></li> -->
-      <li><img src="<?php echo get_stylesheet_directory_uri(  );?>/img/ICONE_VEGAN.png" alt=""><p class="fontBold txtSmall textWhite">Vegano, e sem crueldade animal</p></li>
-      <li><img src="<?php echo get_stylesheet_directory_uri(  );?>/img/ICONE_ALUMINIO.png" alt=""><p class="fontBold txtSmall textWhite">Não contém alumínio</p></li>
+      <li><img src="<?php echo get_stylesheet_directory_uri(  );?>/img/ICONE_DERMA.svg" alt=""><p class="fontBold fontNormal textWhite">Dermatologicamente Testada</p></li>
+      <li><img src="<?php echo get_stylesheet_directory_uri(  );?>/img/ICONE_GINE.svg" alt=""><p class="fontBold fontNormal textWhite">Ginecológica-<br>mente Testada</p></li>
+      <li><img src="<?php echo get_stylesheet_directory_uri(  );?>/img/ICONE_HIPO.svg" alt=""><p class="fontBold fontNormal textWhite">Hipoalergênica</p></li>
+      <li><img src="<?php echo get_stylesheet_directory_uri(  );?>/img/ICONE_ALUM.svg" alt=""><p class="fontBold fontNormal textWhite">Não contém Alumínio</p></li>
+      <li><img src="<?php echo get_stylesheet_directory_uri(  );?>/img/ICONE_VEGANA.svg" alt=""><p class="fontBold fontNormal textWhite">Vegana</p></li>
+      <li><img src="<?php echo get_stylesheet_directory_uri(  );?>/img/ICONE_ANIMAL.svg" alt=""><p class="fontBold fontNormal textWhite">Sem testes animais</p></li>
     </ul>
     </div>
     </div>
   </div>
 </section>
+
+<section class="loopProdutos mb-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center mb-5">
+        <h2 class="fontGrande textBlue my-5">Nossos Produtos</h2>
+      </div>
+    
+      <?php
+      // WooCommerce product loop
+      $args = array(
+        'post_type' => 'product',
+        'posts_per_page' => 3, // Number of products to display
+      );
+
+      $loop = new WP_Query($args);
+
+      if ($loop->have_posts()) :
+        while ($loop->have_posts()) : $loop->the_post();
+          global $product;
+      ?>
+          <div class="col-md-4 col-sm-6 mb-5">
+            <div class="product-item- productItemBox text-center">
+              <a href="<?php the_permalink(); ?>" class="mb-5">
+                <?php if (has_post_thumbnail()) : ?>
+                  <?php the_post_thumbnail('medium', array('class' => 'img-fluid imgLoopProducts')); ?>
+                <?php else : ?>
+                  <img  src="<?php echo wc_placeholder_img_src(); ?>" alt="<?php the_title(); ?>" class="img-fluid imgLoopProdutos">
+                <?php endif; ?>
+              </a>
+              <p class="product-title  mt-5">
+                <a class="fontNormal textPink" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+              </p>
+
+              <p class="product-short-description fontNormalPlus greytext">
+  <?php echo apply_filters( 'woocommerce_short_description', $post->post_excerpt ); ?>
+              </p>
+
+
+              <p class="product-price fontNormalPlus"><?php echo $product->get_price_html(); ?></p>
+             
+            </div>
+          </div>
+      <?php
+        endwhile;
+        wp_reset_postdata();
+      else :
+        echo '<p class="col-12 text-center">Nenhum produto encontrado.</p>';
+      endif;
+      ?>
+      <button class="btn btnPink my-5">Experimente</button>
+    </div>
+  </div>
+</section>
+
+
     
 
   </div>

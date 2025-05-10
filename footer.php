@@ -1,7 +1,10 @@
 <footer id="footer greyBg">
    
    <div class="container-fluid">
-      <div class="row">
+      <div class="row bgRoxo" style="padding:50px 0;">
+
+      </div>
+      <div class="row" style="padding: 5% 0;">
          <div class="col-4"><img src="<?php echo get_stylesheet_directory_uri();?>/img/LOGO_AZUL.png" alt="LOGO_AZUL" style="float:right;"></div>
          <div class="col-4 text-center"><p class="fontBig">Siga nas Redes Sociais</p>
       

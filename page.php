@@ -1,6 +1,6 @@
 <?php get_header();?>
 
-<div class="content woocommerce">
+<div class="content woocommerce page">
 	<div class="container">
 		<div class="row">
 			

@@ -8,13 +8,13 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="<?php echo $descricao; ?>">
-  <meta name="author" content="Vowl Digital">
+  <meta name="author" content="Levitate WEB">
   <title><?php the_title(); ?></title>
   <meta name="googlebot" content="index,follow">
   <meta name="theme-color" content="#111111" />
   <meta name="robots" content="index,follow">
   <meta name="keywords" content="<?php echo $meta_keys ?>">
-  <meta property="publisher" content="Vowl Digital">
+  <meta property="publisher" content="Levitate WEB">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="pt_BR">
   <meta property="og:region" content="Brasil">

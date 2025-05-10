@@ -42,6 +42,7 @@ add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
 
 
 
+
 //widgets sidebar
 
 
@@ -65,11 +66,9 @@ function load_css(){
 	wp_enqueue_style('stylesheet');
 	wp_register_style('custom', get_template_directory_uri() . '/app.css', array(), false, 'all');
 	wp_enqueue_style('custom');
-
-	wp_enqueue_script('Raleway', get_template_directory_uri() . '/src/fonts/Raleway.woff2', array(), false, 'all');
-	wp_enqueue_script('DancingScript');
-	wp_enqueue_script('NotoSans-Regular', get_template_directory_uri() . '/src/fonts/NotoSans-Regular.woff2', array(), false, 'all');
-	wp_enqueue_script('NotoSans-Regular');
+	wp_enqueue_style('custom-fonts', get_template_directory_uri() . '/src/fonts/fonts.css');
+	
+	
 	
 }
 
@@ -85,6 +84,7 @@ function load_js(){
 }
 
 add_action('wp_enqueue_scripts', 'load_js');
+
 
 
 //widgets sidebar

@@ -1,3 +1,27 @@
+@font-face {
+	font-family : 'MyriadPro-Regular';
+	src         : url(src/fonts/MyriadPro-Regular.otf) format('opentype');
+	font-weight : 300;
+	font-style  : normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'MyriadPro-Bold';
+	src        : url(src/fonts/MyriadPro-Bold.otf) format('opentype');
+
+	font-weight : 600;
+	font-style  : normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'MyriadPro-Semibold';
+	src        : url(src/fonts/MyriadPro-Semibold.otf) format('opentype');
+
+	font-weight : 400;
+	font-style  : normal;
+	font-display: swap;
+}
 @charset "UTF-8";
 /*!
  * Bootstrap v4.6.2 (https://getbootstrap.com/)
@@ -9990,34 +10014,6 @@ h3 {
     border-color: #dee2e6;
   }
 }
-/*
-
-
-FONTS
-
-
-*/
-@font-face {
-  font-family: "MyriadPro-Regular";
-  src: url(src/fonts/MyriadPro-Regular.otf) format("opentype");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "MyriadPro-Bold";
-  src: url(src/fonts/MyriadPro-Bold.otf) format("opentype");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "MyriadPro-Semibold";
-  src: url(src/fonts/MyriadPro-Semibold.otf) format("opentype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
 * {
   font-family: "MyriadPro-Regular";
 }
@@ -10030,9 +10026,14 @@ b, h3, h5, .fontBold {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 90vh;
+  min-height: 90vh;
   padding: 25px 25% 0px 20%;
   text-align: start;
+}
+
+.mulherSaltando {
+  height: 690px;
+  float: right;
 }
 
 .textBlue {
@@ -10051,6 +10052,7 @@ b, h3, h5, .fontBold {
   color: #848381;
 }
 
+/* Default font sizes (for 2K screens) */
 .txtNormal {
   font-size: 1.5rem;
 }
@@ -10147,6 +10149,270 @@ body {
   font-size: 0.75rem;
 }
 
+/* Responsive font sizes */
+@media (max-width: 1920px) {
+  /* For screens smaller than 2K */
+  .rowLista {
+    padding: 20px 250px !important;
+  }
+
+  .produtoCta {
+    width: 490px;
+    /* height: 600px !important; */
+    float: initial;
+    /* margin-left: -120px; */
+    margin-top: 120px;
+    margin-right: 100px;
+  }
+
+  .txtNormal {
+    font-size: 1.4rem;
+  }
+
+  .txtSmall {
+    font-size: 1.15rem;
+  }
+
+  .fontNormal {
+    font-size: 1.8rem;
+  }
+
+  .fontNormalPlus {
+    font-size: 2rem;
+  }
+
+  .fontBigMinus {
+    font-size: 2.25rem;
+  }
+
+  .fontBig {
+    font-size: 2.5rem;
+  }
+
+  .fontBigPlus {
+    font-size: 2.75rem;
+  }
+
+  .fontGrande {
+    font-size: 3.25rem;
+  }
+
+  .fontXl {
+    font-size: 3.75rem;
+  }
+
+  .fontTitle {
+    font-size: 4.25rem;
+  }
+
+  h1 {
+    font-size: 4.25rem;
+  }
+
+  h2 {
+    font-size: 3.25rem;
+  }
+
+  h3 {
+    font-size: 2.75rem;
+  }
+
+  h4 {
+    font-size: 2.25rem;
+  }
+
+  h5 {
+    font-size: 1.75rem;
+  }
+
+  h6 {
+    font-size: 1.4rem;
+  }
+
+  body {
+    font-size: 0.95rem;
+  }
+
+  .small-text {
+    font-size: 0.8rem;
+  }
+
+  .extra-small-text {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 1366px) {
+  /* For screens smaller than 1280px */
+  .rowLista {
+    padding: 10px 0px !important;
+  }
+
+  .imgMulher {
+    position: absolute !important;
+    right: -150px !important;
+    z-index: 999 !important;
+    bottom: 0 !important;
+    width: 650px !important;
+  }
+
+  .produtoCta {
+    width: 300px;
+  }
+
+  .txtNormal {
+    font-size: 1.25rem;
+  }
+
+  .txtSmall {
+    font-size: 1rem;
+  }
+
+  .fontNormal {
+    font-size: 1.5rem;
+  }
+
+  .fontNormalPlus {
+    font-size: 1.75rem;
+  }
+
+  .fontBigMinus {
+    font-size: 2rem;
+  }
+
+  .fontBig {
+    font-size: 2.25rem;
+  }
+
+  .fontBigPlus {
+    font-size: 2.5rem;
+  }
+
+  .fontGrande {
+    font-size: 3rem;
+  }
+
+  .fontXl {
+    font-size: 3.5rem;
+  }
+
+  .fontTitle {
+    font-size: 4rem;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 2.5rem;
+  }
+
+  h4 {
+    font-size: 2rem;
+  }
+
+  h5 {
+    font-size: 1.5rem;
+  }
+
+  h6 {
+    font-size: 1.25rem;
+  }
+
+  body {
+    font-size: 0.9rem;
+  }
+
+  .small-text {
+    font-size: 0.75rem;
+  }
+
+  .extra-small-text {
+    font-size: 0.65rem;
+  }
+}
+@media (max-width: 768px) {
+  /* For tablets and smaller screens */
+  .txtNormal {
+    font-size: 1rem;
+  }
+
+  .txtSmall {
+    font-size: 0.875rem;
+  }
+
+  .fontNormal {
+    font-size: 1.25rem;
+  }
+
+  .fontNormalPlus {
+    font-size: 1.5rem;
+  }
+
+  .fontBigMinus {
+    font-size: 1.75rem;
+  }
+
+  .fontBig {
+    font-size: 2rem;
+  }
+
+  .fontBigPlus {
+    font-size: 2.25rem;
+  }
+
+  .fontGrande {
+    font-size: 2.5rem;
+  }
+
+  .fontXl {
+    font-size: 3rem;
+  }
+
+  .fontTitle {
+    font-size: 3.5rem;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h2 {
+    font-size: 2.75rem;
+  }
+
+  h3 {
+    font-size: 2.25rem;
+  }
+
+  h4 {
+    font-size: 1.75rem;
+  }
+
+  h5 {
+    font-size: 1.25rem;
+  }
+
+  h6 {
+    font-size: 1rem;
+  }
+
+  body {
+    font-size: 0.85rem;
+  }
+
+  .small-text {
+    font-size: 0.7rem;
+  }
+
+  .extra-small-text {
+    font-size: 0.6rem;
+  }
+}
 /*
 
 	ESTILOS
@@ -10194,10 +10460,6 @@ body {
   margin: 0 10px;
 }
 
-footer {
-  padding: 5% 0;
-}
-
 .nav-link {
   color: white;
 }
@@ -10214,10 +10476,22 @@ footer {
 }
 
 .produtoCta {
-  width: 600px !important;
-  height: 600px !important;
+  width: 490px;
+  /* height: 600px !important; */
   float: left;
-  margin-left: 30px;
+  margin-left: 70px;
+  margin-top: 20px;
+}
+
+.productItemBox {
+  width: 320px;
+  height: 530px;
+  border-radius: 40px;
+  padding: 50px;
+  margin: 0 auto;
+  background-color: white;
+  text-align: center;
+  box-shadow: 10px 10px 41px 0px rgba(0, 0, 0, 0.75);
 }
 
 #header {
@@ -10241,6 +10515,7 @@ footer {
   height: 70px;
   /* margin-top: 64px; */
   letter-spacing: 3px;
+  margin: 0 auto;
 }
 
 .ctaText {
@@ -10393,6 +10668,10 @@ footer {
   /* min-height: 200px; */
 }
 
+.rowLista {
+  padding: 20px 500px;
+}
+
 .boxNuvem {
   text-align: end;
 }
@@ -10417,6 +10696,11 @@ footer {
   height: 517px;
 }
 
+#produtoSingle {
+  width: 214px;
+  margin-left: 105px;
+}
+
 .customList {
   list-style: none;
   padding: 35px 0 0 110px;
@@ -10429,11 +10713,11 @@ footer {
   justify-content: space-evenly;
 }
 .listaIcons li {
-  width: 200px;
+  width: 100%;
   margin: 0 8px;
 }
 .listaIcons li img {
-  max-width: 100px;
+  width: 150px;
 }
 
 .sectionMicelar .nuvemRoxa {
@@ -10452,4 +10736,8 @@ footer {
 .sectionDois {
   min-height: 90dvh;
   padding: 10px 0px;
+}
+
+.imgLoopProducts {
+  max-width: 150px;
 }
