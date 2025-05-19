@@ -12,8 +12,17 @@
 b,h3,h5, .fontBold{
 	font-family:'MyriadPro-Bold';
 }
-
-
+.boxCart{
+    flex-direction: column;
+    display: flex
+;
+    justify-content: center;
+    min-height: 60Vh;
+    margin: 20px 0px;
+}
+.boxSaltando{
+    float:left; margin:95px 0px 0px 100px; 
+}
 .textBoxMulher{
 	
 	display: flex
@@ -37,6 +46,7 @@ b,h3,h5, .fontBold{
 .textPink{
 	color:$pink;
 }
+
 .greyText{
 	color:#848381;
 }
@@ -119,6 +129,25 @@ body {
 .extra-small-text {
     font-size: 0.75rem;
 }
+.rowCustom{
+    min-height:139dvh; padding-top:90px;
+}
+.rowCustomTwo{
+    background-color:#3cc6db;
+}
+.imgMulherMobile{
+    float: right;
+    margin: 0px 40px 0px 0px;
+}
+.textBoxSingle{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 200px;
+}
+
 
 /* Responsive font sizes */
 @media (max-width: 1920px) { /* For screens smaller than 2K */
@@ -206,6 +235,9 @@ body {
 		bottom: 0 !important; 
 		width: 650px !important; 
 	}
+    .produtoCta{
+        max-width: 400px !important;
+    }
 	.textBoxMulher{
 
 	}
@@ -270,64 +302,346 @@ body {
         font-size: 0.65rem;
     }
 }
+@media(max-width:1024px){
+    .produtoCta{
+        max-width: 300px !important;
+        margin:0;
+    }
+    .ctaText{
+        ul{
+            text-align: center !important;
+        }
+    }
+    .sectionDois{
+        min-height: 30dvh !important;
+    }
+    .btnPìnkCustom{
+        margin:0 auto; margin-left:100px; margin-bottom:10px;
+    }
+    .mulherSaltando{
+        height: 450px;
+        float:center;
+    }
+    .boxSaltando{
+        margin: 0 !important;
+    }
+    .btnPinkCustom{
+       margin-left:0 !important;
+    }
+    .rowCustom{
+        min-height:30dvh !important; 
+        padding-top:30px !important;
+    }
+ 
+    .textBoxMulher{
+        display: flex
+;
+    flex-direction: column;
+    justify-content: space-around;
+     min-height: 30vh !important; 
+    padding: 10px 0px 10px 140px;
+    text-align: start;
 
+    }
+    .boxBlue{
+        margin-top:25%;
+    }
+    .listaIcons{
+        li{
+            img{
+                width: 100px !important;
+
+            }
+        }
+    }
+    .card{
+        svg{
+            width: 100px !important;
+        }
+    }
+
+    #mulherSorrindo{
+    
+    height: 450px !important;
+    float: center !important;
+
+    }
+}
 @media (max-width: 768px) { /* For tablets and smaller screens */
+    #firstSection{
+        min-height: 30dvh !important;
+        background-position: right !important;
+        padding: 20px 0px;
+    }
+    .produtoCta{
+        float: none !important;
+        display: block !important;
+        margin: 0 auto !important;
+       
+    }
+    .imgMulher{
+        width: 500px !important;
+    }
+    .mulherSaltando{
+        float:none !important;
+    }
+    .textBoxMulher{
+        padding: 20px !important;
+        margin: 0 auto !important;
+        text-align: center !important;
+    }
+    .boxSaltando{
+        float: none !important;
+    }
+    .listaCard{
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    #MULHERSORRINDO{
+        display: block !important;
+    margin: 0 auto !important;
+    float:none !important;
+    }
+   .logo_footer{
+    width: 200px !important;
+   }
+   #produtoSingleMobile{
+    float:right !important;
+   }
+   .btnPink{
+       margin: 0 auto !important;
+    margin-top:52px !important;
+   }
+   .txtBoxAguaMobile{
+    margin-bottom:40px !important;
+   }
+   .navbar-brand{
+    a{
+        img{
+            width: 100px !important;
+    height: 40px !important;
+        };
+    }
+   }
+   .rowCustomTwo{
+    padding: 20px 0px !important;
+   }
+   .whiteRow{
+    min-height: 30vh !important;
+   }
+   .customList{
+    padding:10px !important;
+    li{
+        margin: 10px 0px !important;
+    }
+   }
+  
+
     .txtNormal {
-        font-size: 1rem;
+        font-size: 1rem !important;
     }
     .txtSmall {
-        font-size: 0.875rem;
+        font-size: 0.875rem !important;
     }
     .fontNormal {
-        font-size: 1.25rem;
+        font-size: 1.25rem !important;
     }
     .fontNormalPlus {
-        font-size: 1.5rem;
+        font-size: 1.5rem !important;
     }
     .fontBigMinus {
-        font-size: 1.75rem;
+        font-size: 1.75rem !important;
     }
     .fontBig {
-        font-size: 2rem;
+        font-size: 2rem !important;
     }
     .fontBigPlus {
-        font-size: 2.25rem;
+        font-size: 2.25rem !important;
     }
     .fontGrande {
-        font-size: 2.5rem;
+        font-size: 2.5rem !important;
     }
     .fontXl {
-        font-size: 3rem;
+        font-size: 3rem !important;
     }
     .fontTitle {
-        font-size: 3.5rem;
+        font-size: 3.5rem !important;
     }
     h1 {
-        font-size: 3.5rem;
+        font-size: 3.5rem !important;
     }
     h2 {
-        font-size: 2.75rem;
+        font-size: 2.75rem !important;
     }
     h3 {
-        font-size: 2.25rem;
+        font-size: 2.25rem !important;
     }
     h4 {
-        font-size: 1.75rem;
+        font-size: 1.75rem !important;
     }
     h5 {
-        font-size: 1.25rem;
+        font-size: 1.25rem !important;
     }
     h6 {
-        font-size: 1rem;
+        font-size: 1rem !important;
     }
     body {
-        font-size: 0.85rem;
+        font-size: 0.85rem !important;
     }
     .small-text {
-        font-size: 0.7rem;
+        font-size: 0.7rem !important;
     }
     .extra-small-text {
-        font-size: 0.6rem;
+        font-size: 0.6rem !important;
+    }
+}
+
+@media(max-width:766px){
+    .product-details, .product-price, .product-title, .product-short-description{
+        text-align:center;
+    }
+    .navbar-nav{
+        position: fixed;
+        right: 0;
+        height: 100vh;
+        top: 0px;
+        background: white;
+        z-index: 1050;
+        padding: 20px;
+        justify-content: start;
+        width: 70%;
+        
+        li{
+            a{
+                color:$pink;
+            }
+        }
+        
+    }
+    .textBoxSingle{
+        width: 125px;
+    }
+    .navbar-collapse{
+        flex-basis: 0;
+        flex-grow: 0;
+        transition: all 0.3s ease;
+        transition: max-height 0.5s ease;
+    
+    }
+    #logoAzul{
+        max-width: 150px;
+    }
+.produtoCta, .btnPink, .btnPinkCustom, .imgCientistaMobile{
+    max-width: 250px !important;
+    margin: 0 auto !important;
+}
+.mulherSaltando{
+    height: 250px !important;
+}
+.textBoxMulher, .customList{
+    padding: 10px !important
+}
+.imgMulherMobile{
+    max-width: 250px !important;
+   
+}
+#MULHERSORRINDO{
+    width: 250px !important;
+    height: 350px !important;
+}
+.iconeQuimica{
+    width: 250px !important;
+}
+.produtoSingleMobile{
+    width: 150px !important;
+}
+.listaIcons{
+    flex-wrap: wrap !important;
+}
+.txtBox{
+    padding: 10px !important;
+    margin: 0 auto !important;
+}
+.whiteRow{
+    min-height: 30vh !important;
+}
+.listaCard{
+    margin: 0 auto !important;
+    padding:10px !important;
+    .card{
+        width: 250px !important;
+        margin: 0 auto !important;
+    }
+}
+.listaBen{
+    ul{
+        padding:10px !important;
+    }
+}
+.txtBoxSingle{
+    h2{
+        width: 40px !important;
+    }
+}
+.boxSaltando{
+    padding: 0 20px;
+}
+ .txtNormal {
+        font-size: 0.75rem !important;
+    }
+    .txtSmall {
+        font-size: 0.625rem !important;
+    }
+    .fontNormal {
+        font-size: 0.875rem !important;
+    }
+    .fontNormalPlus {
+        font-size: 1rem !important;
+    }
+    .fontBigMinus {
+        font-size: 1.25rem !important;
+    }
+    .fontBig {
+        font-size: 1.5rem !important;
+    }
+    .fontBigPlus {
+        font-size: 1.75rem !important;
+    }
+    .fontGrande {
+        font-size: 2rem !important;
+    }
+    .fontXl {
+        font-size: 2.25rem !important;
+    }
+    .fontTitle {
+        font-size: 2.5rem !important;
+    }
+    h1 {
+        font-size: 2.5rem !important;
+    }
+    h2 {
+        font-size: 2rem !important;
+    }
+    h3 {
+        font-size: 1.75rem !important;
+    }
+    h4 {
+        font-size: 1.25rem !important;
+    }
+    h5 {
+        font-size: 0.875rem !important;
+    }
+    h6 {
+        font-size: 0.75rem !important;
+    }
+    body {
+        font-size: 0.65rem !important;
+    }
+    .small-text {
+        font-size: 0.55rem !important;
+    }
+    .extra-small-text {
+        font-size: 0.5rem !important;
     }
 }
 /*
@@ -357,7 +671,7 @@ body {
 }
 
 .navbar-nav{
-	width:1300px; /* Set maximum width */
+	
 	margin: 0 auto;   /* Center the navbar horizontally */
 	
 	display: flex;    /* Ensure proper alignment of items */
@@ -426,6 +740,31 @@ footer{
 	background     : transparent;
 	z-index:1;
 }
+.textPink{
+    color:$pink;
+}
+
+.bgPink{
+background:#e83e8c;
+}
+.cartListDetails{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    list-style: none;
+    
+    li{
+        margin:0px 4px;
+    }
+}
+
+
+
+.cart-item{
+    box-shadow: 10px 10px 41px 0px rgba(0, 0, 0, 0.75);
+    border-radius:25px;
+    padding:25px;
+}
 .btnPink{
 	background-color: #e83e8c;
     display: block;
@@ -464,8 +803,13 @@ footer{
 		margin:30px 0px 70px 0px;
 	}
 }
+.sectionMicelar{
+    padding:10% 0px;
+}
 .whiteRow{
 	background-color:#eeeeee;
+   
+    
 	
 	//padding:5% 0;
 }
@@ -479,8 +823,39 @@ footer{
 .bgRoxo{
 	background-color:#666cfe;
 }
+.roxoText{
+    color:#666cfe;
+}
+.product-image{
+    img{
+        display:block;
+        margin: 0 auto;
+    }
+}
+.single_add_to_cart_button{
+    background: #e83e8c !important;
+    display: block;
+    border-radius: 25px;
+    width: 100% !important;
+}
+.row-products{
+    padding: 40px 0px;
+}
+.woocommerce-breadcrumb{
+    a{
+        color:$pink !important;
+    }
+}
 .greyBg{
 	background-color:#eeeeee;
+}
+.card-img-top{
+    width: 100% !important;
+    max-height: 300px !important;
+    object-fit: contain !important;
+    overflow-x: scroll;
+    
+
 }
 .listaCard{
 	list-style-type: none;
@@ -658,6 +1033,7 @@ img{
 	li{
 		width: 100%;
 		margin:0 8px;
+        text-align: center;
 		
 		img{
 			width: 150px;
@@ -687,5 +1063,6 @@ img{
 }
 
 .imgLoopProducts{
-	max-width:150px;
+	max-width:150px !important;
+    max-height:150px !important;
 }
