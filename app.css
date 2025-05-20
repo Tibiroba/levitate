@@ -10660,10 +10660,6 @@ body {
     width: 150px !important;
   }
 
-  .listaIcons {
-    flex-wrap: wrap !important;
-  }
-
   .txtBox {
     padding: 10px !important;
     margin: 0 auto !important;
@@ -10770,6 +10766,25 @@ body {
     font-size: 0.5rem !important;
   }
 }
+@media (max-width: 425px) {
+  .listaIconsCustom {
+    flex-direction: column !important;
+  }
+  .listaIconsCustom li img {
+    max-width: 60px !important;
+  }
+
+  .productItemBox {
+    width: 250px !important;
+    height: auto !important;
+    padding: 12px !important;
+  }
+
+  .imgMulherMobile {
+    float: none !important;
+    margin: 0 auto !important;
+  }
+}
 /*
 
 	ESTILOS
@@ -10788,17 +10803,16 @@ body {
   text-align: center;
 }
 
-.navbar-nav {
-  margin: 0 auto;
-  /* Center the navbar horizontally */
+.navbarCustom {
+  position: absolute;
+  width: 100vw;
+  height: 120px;
   display: flex;
-  /* Ensure proper alignment of items */
-  justify-content: space-between;
-  /* Center the items inside the navbar */
+  flex-direction: row;
 }
-.navbar-nav .nav-link {
-  padding-top: 10px;
-  font-size: 1.5rem;
+
+#menu-menu-header {
+  display: inline-block;
 }
 
 .headerLine {

@@ -555,13 +555,12 @@ body {
 .produtoSingleMobile{
     width: 150px !important;
 }
-.listaIcons{
-    flex-wrap: wrap !important;
-}
+
 .txtBox{
     padding: 10px !important;
     margin: 0 auto !important;
 }
+
 .whiteRow{
     min-height: 30vh !important;
 }
@@ -573,6 +572,7 @@ body {
         margin: 0 auto !important;
     }
 }
+
 .listaBen{
     ul{
         padding:10px !important;
@@ -644,6 +644,26 @@ body {
         font-size: 0.5rem !important;
     }
 }
+
+@media(max-width:425px){
+    .listaIconsCustom{
+    flex-direction: column !important;
+    li{
+        img{
+            max-width: 60px !important;
+        }
+    }
+    }
+    .productItemBox{
+        width: 250px !important;
+        height: auto !important;
+        padding: 12px  !important;
+    }
+    .imgMulherMobile{
+        float: none !important;
+        margin: 0 auto !important;
+    }
+}
 /*
 
 	ESTILOS
@@ -669,28 +689,18 @@ body {
 	
 	
 }
-
-.navbar-nav{
-	
-	margin: 0 auto;   /* Center the navbar horizontally */
-	
-	display: flex;    /* Ensure proper alignment of items */
-	justify-content: space-between; /* Center the items inside the navbar */
-	
-
-	.nav-link{
-		padding-top:10px;
-		font-size: 1.5rem;
-	}
-	// .custom-logo-link{
-	// 	img{
-	// 		width:207px;
-	// 		height: 60px;
-			
-	// 	}
-	
-	// }
+.navbarCustom{
+    position: absolute;
+    width: 100vw;
+    height: 120px ;
+    display:flex;
+    flex-direction:row; 
 }
+#menu-menu-header{
+    display: inline-block;
+    
+}
+
 .headerLine{
 	display: inline-block; /* Ensure it fits inside the navbar */
   width: 2px; /* Set the thickness of the vertical line */

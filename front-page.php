@@ -2,44 +2,6 @@
 
 
 
-<!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner" role="listbox">
-    
-    <div class="carousel-item active" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/img/cta1.jpg')">
-      <div class="carousel-caption d-none d-md-block">
-
-
-
-      </div>
-    </div>
-    
-    <div class="carousel-item" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/img/cta2.jpg')">
-      <div class="carousel-caption d-none d-md-block">
-
-      </div>
-    </div>
-    
-    <div class="carousel-item" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/img/cta3.jpg')">
-      <div class="carousel-caption d-none d-md-block">
-
-      </div>
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div> -->
-
 
 
 <div class="content">
@@ -87,7 +49,7 @@
             <li>
               <h4 class="" style="color:white; letter-spacing:2px;   "><strong style="text-decoration:underline;">Água Micelar Corporal</strong> que<br>higieniza e previne odores<br>durante 24h</h4>
             </li>
-            <li style="margin-top:75px; margin-left:10px;"><button class="btn btnPink">Experimente</button></li>
+            <li style="margin-top:75px; margin-left:10px;"><a href="<?php echo get_permalink( wc_get_page_id( 'shop' ) ); ?>" class="btn btnPink">Experimente</a href="<?php echo get_permalink( wc_get_page_id( 'shop' ) ); ?>"></li>
           </ul>
 
 
@@ -144,7 +106,7 @@
         
   
         </div>
-        <button class="btn btnPink btnPinkCustom" style="">Experimente</button>
+        <a href="<?php echo get_permalink( wc_get_page_id( 'shop' ) ); ?>" class="btn btnPink btnPinkCustom" style="">Experimente</a href="<?php echo get_permalink( wc_get_page_id( 'shop' ) ); ?>">
       </div>
         
       </div>
@@ -172,7 +134,7 @@
 
       <div class="col-12">
       <img src="<?php echo get_stylesheet_directory_uri(  );?>/img/MULHER.png" alt="" class="imgMulherMobile">
-      <button class="btn btnPink mb-5">Experimente</button>  
+      <a href="<?php echo get_permalink( wc_get_page_id( 'shop' ) ); ?>" class="btn btnPink mb-5">Experimente</a href="<?php echo get_permalink( wc_get_page_id( 'shop' ) ); ?>">  
     </div>
     </div>
 
@@ -202,7 +164,7 @@
           <p class="fontNormalPlus textWhite mb-4" style=" font-weight:400; letter-spacing:3px;">Aplique a  <b class="fontBig">Água Micelar</b><br> no <b class="fontBig">Lenço Levitate</b> e higienize seu corpo:</p>
           <p class="fontNormalPlus textWhite" style=" font-weight:400; letter-spacing:3px; margin-bottom:70px;"><b class="fontBig">Após o banho,</b> para prevenção<br> de odores;</p>
           <p class="fontNormalPlus textWhite mb-5" style=" font-weight:400; letter-spacing:3px;">Ou quando sentir necessidades de revitaliza-lo, <b class="fontBig">ao longo do dia</b></p>
-          <button class="btn btnPink mt-4 py-3"  >Experimente</button>
+          <a href="<?php echo get_permalink( wc_get_page_id( 'shop' ) ); ?>" class="btn btnPink mt-4 py-3"  >Experimente</a href="<?php echo get_permalink( wc_get_page_id( 'shop' ) ); ?>">
           </div>
         
         <!-- </div> -->
@@ -242,7 +204,7 @@
     <li class="fontGrande" style="font-family:'MyriadPro-Semibold';" >Ginecologicamente</li>
     <li class="fontGrande" style="font-family:'MyriadPro-Semibold';" >Testada</li>
   </ul>
-    <button class="btn btnPink my-5">Experimente</button>
+    <a href="<?php echo get_permalink( wc_get_page_id( 'shop' ) ); ?>" class="btn btnPink my-5">Experimente</a href="<?php echo get_permalink( wc_get_page_id( 'shop' ) ); ?>">
   </div>
 </div>
 </div>
@@ -262,12 +224,12 @@
 
       <div class="txtBoxAgua">
       <ul style=" padding:0; list-style-type:none;">
-        <li style="font-family:'MyriadPro-Semibold'; font-size:2.75rem;" >Hipoeralergênica,</li>
-        <li style="font-family:'MyriadPro-Semibold'; font-size:2.75rem;" >Dermatologicamente e</li>
-        <li style="font-family:'MyriadPro-Semibold'; font-size:2.75rem;" >Ginecologicamente</li>
-        <li style="font-family:'MyriadPro-Semibold'; font-size:2.75rem;" >Testada</li>
+        <li class="fontBigPlus">Hipoeralergênica,</li>
+        <li class="fontBigPlus">Dermatologicamente e</li>
+        <li class="fontBigPlus">Ginecologicamente</li>
+        <li class="fontBigPlus">Testada</li>
       </ul>
-        <button class="btn btnPink mt-5">Experimente</button>
+        <a href="<?php echo get_permalink( wc_get_page_id( 'shop' ) ); ?>" class="btn btnPink mt-5">Experimente</a href="<?php echo get_permalink( wc_get_page_id( 'shop' ) ); ?>">
       </div>
       
 
@@ -293,8 +255,8 @@
     <div class="container greyBg" style="padding:72px 0;">
     <div class="row ">
       <div class="col-12">
-        <div class="mb-5" style="text-align: center;" >
-        <p style="font-weight:400; font-size:3.5rem; font-family:'MyriadPro-regular';">Clique nos botões abaixo e<br> conheça <b class="textPink fontGrande">DICAS LEVITATE</b> para:</p>
+        <div class="mb-5 mx-3" style="text-align: center;" >
+        <p class="fontXl">Clique nos botões abaixo e<br> conheça <b class="textPink fontGrande">DICAS LEVITATE</b> para:</p>
          
         </div>
 </div>
@@ -324,7 +286,7 @@
         </ul>
         <?php if ( wp_is_mobile() ) : ?>
     <!-- Mobile-specific content goes here -->
-    <button class="btn btnPink">Experimente</button>
+    <a href="<?php echo get_permalink( wc_get_page_id( 'shop' ) ); ?>" class="btn btnPink">Experimente</a href="<?php echo get_permalink( wc_get_page_id( 'shop' ) ); ?>">
 <?php else : ?>
     <!-- Desktop-specific content goes here -->
 <?php endif; ?>
@@ -362,19 +324,19 @@
           <ul class="customList">
             <li>
             <p class="fontBig textBlue m-0"><i class="fa fa-chevron-right" style="font-size:30px; margin-right:20px;"></i>Niacinamida</p>
-              <span style="font-family:'MyriadPro-Semibold' ; font-size:2.25rem;"  class="fontNormal pl-5">Uniformiza o tom da pele;</span>
+              <span class="fontBigMinus"  class="fontNormal pl-5">Uniformiza o tom da pele;</span>
             </li>
             <li>
             <p class="fontBig textBlue m-0 "><i class="fa fa-chevron-right" style="font-size:30px; margin-right:20px;"></i>Ácido lático</p>
-              <span style="font-family:'MyriadPro-Semibold' ; font-size:2.25rem;"  class="fontNormal pl-5">Regula o pH;</span>
+              <span class="fontBigMinus"  class="fontNormal pl-5">Regula o pH;</span>
             </li>
             <li>
             <p class="fontBig textBlue  m-0"><i class="fa fa-chevron-right" style="font-size:30px; margin-right:20px;"></i>Pantenol e Aloe Vera</p>
-              <span style="font-family:'MyriadPro-Semibold' ; font-size:2.25rem;"  class="fontNormal pl-5">Acalmam e coonferem hidratação.</span>
+              <span class="fontBigMinus"  class="fontNormal pl-5">Acalmam e coonferem hidratação.</span>
             </li>
 
             <li>
-            <button class="btn btnPink btnPinkCustom" style="margin: 86px 0 0 80px;">Experimente</button>
+            <a href="<?php echo get_permalink( wc_get_page_id( 'shop' ) ); ?>" class="btn btnPink btnPinkCustom" style="margin: 86px 0 0 80px;">Experimente</a href="<?php echo get_permalink( wc_get_page_id( 'shop' ) ); ?>">
             </li>
               
           </ul>
@@ -417,7 +379,7 @@
 <p class="fontBig mb-5" >A Água Micelar remove as impurezas através de Micelas.</p>
  <p class="fontBig mb-5">E combate as bactérias causadoras dos maus odores, preservando o microbioma saudável da pele</p>
 
- <button class="btn btnPink mt-5">Experimente</button>
+ <a href="<?php echo get_permalink( wc_get_page_id( 'shop' ) ); ?>" class="btn btnPink mt-5">Experimente</a href="<?php echo get_permalink( wc_get_page_id( 'shop' ) ); ?>">
 </div>
 
 </div>
@@ -438,7 +400,7 @@
 <p class="fontNormalPlus mb-5" >A Água Micelar remove as impurezas através de Micelas.</p>
  <p class="fontNormalPlus mb-5">E combate as bactérias causadoras dos maus odores, preservando o microbioma saudável da pele</p>
 
- <button class="btn btnPink mt-5">Experimente</button>
+ <a href="<?php echo get_permalink( wc_get_page_id( 'shop' ) ); ?>" class="btn btnPink mt-5">Experimente</a href="<?php echo get_permalink( wc_get_page_id( 'shop' ) ); ?>">
 </div>
 
 
@@ -561,7 +523,7 @@
   </div>
   <div class="col-12">
   <p class="fontBigMinus text-center  textWhite my-5">Primeira e única que<br> higieniza e previne <br> <b class="fontBigPlus">Todos OS ODORES<br> durante 24h</b></p>
-  <button class="btn btnPink">Experimente</button>
+  <a href="<?php echo get_permalink( wc_get_page_id( 'shop' ) ); ?>" class="btn btnPink">Experimente</a href="<?php echo get_permalink( wc_get_page_id( 'shop' ) ); ?>">
   </div>
   </div>
 
@@ -592,7 +554,7 @@
     <p class="textWhite fontGrande">Água Micelar Coporal Levitate</p>
         <p class="fontNormal fontBold textWhite my-3">Primeira e única que<br> higieniza e previne <br> <b class="fontBig">Todos OS ODORES<br> durante 24h</b></p>
         <p class="fontGrande fontBold textWhite my-3">LEVITE COM LEVITATE</p>
-        <button class="btn btnPink mt-5">Experimente</button>
+        <a href="<?php echo get_permalink( wc_get_page_id( 'shop' ) ); ?>" class="btn btnPink mt-5">Experimente</a href="<?php echo get_permalink( wc_get_page_id( 'shop' ) ); ?>">
     </div>
         
   </div>
@@ -631,7 +593,7 @@
   <p  class="textWhite fontGrande " style="text-align:center;" >Nossos Selos</p>
 </div>
 <div class="col-12"> 
-<ul class="listaIcons p-0 text-center">
+<ul class="listaIcons listaIconsCustom p-0 text-center">
   
   <li><img src="<?php echo get_stylesheet_directory_uri(  );?>/img/ICONE_DERMA.svg" alt=""><p class="fontBold fontNormal textWhite">Dermatologicamente Testada</p></li>
   <li><img src="<?php echo get_stylesheet_directory_uri(  );?>/img/ICONE_GINE.svg" alt=""><p class="fontBold fontNormal textWhite">Ginecológica-<br>mente Testada</p></li>
@@ -640,7 +602,7 @@
 </div>
 <div class="col-12">
   
-<ul class="listaIcons p-0 text-center">
+<ul class="listaIcons listaIconsCustom p-0 text-center">
   <li><img src="<?php echo get_stylesheet_directory_uri(  );?>/img/ICONE_ALUM.svg" alt=""><p class="fontBold fontNormal textWhite">Não contém Alumínio</p></li>
   <li><img src="<?php echo get_stylesheet_directory_uri(  );?>/img/ICONE_VEGANA.svg" alt=""><p class="fontBold fontNormal textWhite">Vegana</p></li>
   <li><img src="<?php echo get_stylesheet_directory_uri(  );?>/img/ICONE_ANIMAL.svg" alt=""><p class="fontBold fontNormal textWhite">Sem testes animais</p></li>
@@ -727,7 +689,7 @@
         echo '<p class="col-12 text-center">Nenhum produto encontrado.</p>';
       endif;
       ?>
-      <button class="btn btnPink my-5">Experimente</button>
+      <a href="<?php echo get_permalink( wc_get_page_id( 'shop' ) ); ?>" class="btn btnPink my-5">Experimente</a href="<?php echo get_permalink( wc_get_page_id( 'shop' ) ); ?>">
     </div>
   </div>
 </section>
