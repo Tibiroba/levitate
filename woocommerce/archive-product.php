@@ -33,7 +33,7 @@ get_header(); ?>
             </div>
         </div>
     <?php else : ?>
-        <p class="text-center">No products found.</p>
+        <p class="text-center">Produtos não encontrados.</p>
     <?php endif; ?>
 </div>
 
