@@ -10,12 +10,12 @@
 </div>
 
 
-<div class="content">
+
 
         <div class="container">
             <div class="row">
 
-            <div class="col-12">
+            <div class="col-12 text-center">
         <?php if(have_posts()) : while(have_posts())  : the_post();?>
         
     </div> 
@@ -24,7 +24,7 @@
 
 <?php endwhile; else: endif;?>
 
-</div>
+
 
 
 

@@ -31,9 +31,16 @@ get_header(); ?>
             <div class="col-md-8 col-sm-12">
 
 
-                <p class="custom-message">Confira os itens no seu carrinho antes de finalizar a compra.</p>
+                <p class="custom-message text-start fontNormal textBlue">Confira os itens no seu carrinho antes de finalizar a compra.</p>
                 <div class="cart-items">
                     <?php
+                        // Debugging: Check the cart contents
+                        
+                        // print_r(WC()->cart->get_cart());
+                       
+                    //     echo '<pre>';
+                    // print_r(WC()->cart->get_cart());
+                    //  echo '</pre>';
                         // Loop through cart items
                         foreach (WC()->cart->get_cart() as $cart_item_key => $cart_item) {
                             $product = $cart_item['data'];
@@ -43,6 +50,7 @@ get_header(); ?>
                             $product_subtotal = wc_price($cart_item['line_total']);
                             $product_permalink = $product->is_visible() ? $product->get_permalink() : '';
                             $product_thumbnail = $product->get_image('thumbnail');
+                            $remove_url = wc_get_cart_remove_url($cart_item_key);
                     ?>
 
                         <div class="cart-item d-flex align-items-center mb-3">
@@ -52,26 +60,29 @@ get_header(); ?>
                             <div class="product-details flex-grow-1 ms-3">
                                 <ul class="cartListDetails">
                                     <li>
-                                        <p class="product-name "><a class="textPink fontNormal" href="<?php echo esc_url($product_permalink); ?>"><?php echo esc_html($product_name); ?></a></p>
+                                        <p class="product-name "><a class="textBlue fontNormal" href="<?php echo esc_url($product_permalink); ?>"><?php echo esc_html($product_name); ?></a></p>
                                     </li>
                                     <li>
-                                        <p class="product-price greyText">Preço: <?php echo $product_price; ?></p>
+                                        <p class="product-price textBlue">Preço: <span class="greyText"><?php echo $product_price; ?></span></p>
                                     </li>
                                     <li>
-                                        <div class="product-quantity greyText">
+                                        <div class="product-quantity textBlue">
                                             Quantidade:
                                             <form action="<?php echo esc_url(wc_get_cart_url()); ?>" method="post" class="update-quantity-form d-inline">
                                                 <input type="number" name="cart[<?php echo $cart_item_key; ?>][qty]" value="<?php echo esc_attr($product_quantity); ?>" min="1" class="input-text qty text" style="width: 50px; text-align: center;" />
                                                 <button type="submit" class="btn btn-sm bgPink text-white" name="update_cart" value="<?php esc_attr_e('Update cart', 'woocommerce'); ?>">
                                                     Atualizar
                                                 </button>
+                                                <a href="<?php echo esc_url($remove_url); ?>" class="btn btn-sm btn-outline-danger" title="<?php esc_attr_e('Remover', 'woocommerce'); ?>">
+                <?php esc_html_e('Remove', 'woocommerce'); ?>
+            </a>
                                                 <?php wp_nonce_field('woocommerce-cart', 'woocommerce-cart-nonce'); ?>
                                             </form>
                                         </div>
                                     </li>
 
                                     <li>
-                                        <p class="product-subtotal greyText">Subtotal: <?php echo $product_subtotal; ?></p>
+                                        <p class="product-subtotal  textBlue">Subtotal: <span class="greyText"><?php echo $product_subtotal; ?></span></p>
                                     </li>
                                 </ul>
 

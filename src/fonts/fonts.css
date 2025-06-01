@@ -1,7 +1,7 @@
 @font-face {
 	font-family : 'MyriadPro-Regular';
 	src         : url(src/fonts/MyriadPro-Regular.otf) format('opentype');
-	font-weight : 300;
+	font-weight : 200;
 	font-style  : normal;
 	font-display: swap;
 }
@@ -22,3 +22,5 @@
 	font-style  : normal;
 	font-display: swap;
 }
+
+

@@ -13,7 +13,7 @@ do_action( 'woocommerce_before_main_content' );
 <div class="container">
     <div class="row row-products">
         <!-- Product Details -->
-        <div class="col-md-8 col-sm-12 ">
+        <div class="col-md-8 col-sm-12 text-center">
             <?php
             global $product;
 
@@ -23,13 +23,13 @@ do_action( 'woocommerce_before_main_content' );
 
             if ( $product ) {
                 // Display product title
-                echo '<h3 class="product-title roxoText">' . esc_html( $product->get_name() ) . '</h3>';
+                echo '<h3 class="product-title textBlue">' . esc_html( $product->get_name() ) . '</h3>';
 
                 // Display product price
-                echo '<p class="product-price">' . $product->get_price_html() . '</p>';
+                echo '<p class="product-price greyText">' . $product->get_price_html() . '</p>';
 
                 // Display product short description
-                echo '<div class="product-short-description">' . $product->get_short_description() . '</div>';
+                echo '<div class="product-short-description blueText fontBold">' . $product->get_short_description() . '</div>';
 
                 // Display add-to-cart button
                 
@@ -49,9 +49,9 @@ do_action( 'woocommerce_before_main_content' );
     </div>
     <div class="product-details">
 		
-        <h5 class="textPink"><?php echo esc_html( $product->get_name() ); ?></h5>
-        <div class="fontNormalMinus greyText"><?php echo $product->get_short_description(); ?></div>
-        <p class="fontNormal"><?php echo $product->get_price_html(); ?></p>
+        <h5 class="textBlue my-3"><?php echo esc_html( $product->get_name() ); ?></h5>
+        <div class="fontNormalMinus greyText "><?php echo $product->get_short_description(); ?></div>
+        <p class="fontNormal my-2"><?php echo $product->get_price_html(); ?></p>
     
 		<?php
 global $product;

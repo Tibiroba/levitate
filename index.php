@@ -6,7 +6,7 @@
 <div class="hero">
     <div class="container index">
         <div class="row">
-            <h1><?php echo the_title();?></h1>
+            <h1 class="textPink text-center"><?php echo the_title();?></h1>
             <!-- <h2>INDEX</h2> -->
         </div>
     </div>

@@ -9,8 +9,12 @@
 *{
 	font-family: 'MyriadPro-Regular';
 }
-b,h3,h5, .fontBold{
+b, .fontBold{
 	font-family:'MyriadPro-Bold';
+}
+a:hover{
+opacity: 0.7;
+text-decoration: underline;
 }
 .boxCart{
     flex-direction: column;
@@ -20,656 +24,6 @@ b,h3,h5, .fontBold{
     min-height: 60Vh;
     margin: 20px 0px;
 }
-.boxSaltando{
-    float:left; margin:95px 0px 0px 100px; 
-}
-.textBoxMulher{
-	
-	display: flex
-	;
-		flex-direction: column;
-		justify-content: space-around;
-		min-height: 90vh;
-		padding: 25px 25% 0px 20%;
-		text-align: start;
-}
-.mulherSaltando{
-	height:690px;
-	 float:right;
-}
-.textBlue{
-	color:$roxo;
-}
-.textWhite{
-	color:white;
-}
-.textPink{
-	color:$pink;
-}
-
-.greyText{
-	color:#848381;
-}
-/* Default font sizes (for 2K screens) */
-.txtNormal {
-    font-size: 1.5rem;
-}
-.txtSmall {
-    font-size: 1.25rem;
-}
-.fontNormal {
-    font-size: 2rem;
-    font-family: 'MyriadPro-Regular';
-    letter-spacing: 1px;
-}
-.fontNormalPlus {
-    font-size: 2.25rem;
-    font-family: 'MyriadPro-Regular';
-}
-.fontBigMinus {
-    font-size: 2.5rem;
-    font-family: 'MyriadPro-Bold';
-    letter-spacing: 2px;
-    font-weight: 500;
-}
-.fontBig {
-    font-size: 2.75rem;
-    font-weight: bold;
-    letter-spacing: 1px;
-}
-.fontBigPlus {
-    font-size: 3rem;
-    font-family: 'MyriadPro-Bold';
-    letter-spacing: 1px;
-}
-.fontGrande {
-    font-size: 3.5rem;
-    font-family: 'MyriadPro-Bold';
-    font-weight: bold;
-}
-.fontXl {
-    font-size: 4rem;
-    font-family: 'MyriadPro-Bold';
-    font-weight: bold;
-}
-.fontTitle {
-    font-size: 4.5rem;
-}
-
-h1 {
-    font-size: 4.5rem;
-    font-family: 'MyriadPro-Semibold';
-}
-h2 {
-    font-size: 3.5rem;
-    font-family: 'MyriadPro-Semibold';
-}
-h3 {
-    font-size: 3rem;
-    font-family: 'MyriadPro-Semibold';
-}
-h4 {
-    font-size: 2.5rem;
-    font-family: 'MyriadPro-Semibold';
-}
-h5 {
-    font-size: 2rem;
-    font-family: 'MyriadPro-Semibold';
-}
-h6 {
-    font-size: 1.5rem;
-    font-family: 'MyriadPro-Semibold';
-}
-body {
-    font-size: 1rem;
-}
-.small-text {
-    font-size: 0.875rem;
-}
-.extra-small-text {
-    font-size: 0.75rem;
-}
-.rowCustom{
-    min-height:139dvh; padding-top:90px;
-}
-.rowCustomTwo{
-    background-color:#3cc6db;
-}
-.imgMulherMobile{
-    float: right;
-    margin: 0px 40px 0px 0px;
-}
-.textBoxSingle{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 200px;
-}
-
-
-/* Responsive font sizes */
-@media (max-width: 1920px) { /* For screens smaller than 2K */
-	.rowLista{
-		padding:20px 250px !important;
-	}
-	.produtoCta{
-		width: 490px;
-		/* height: 600px !important; */
-		float: initial;
-		/* margin-left: -120px; */
-		margin-top: 120px;
-		margin-right: 100px;
-	}
-	// .mulherSaltando{
-	// 	height: 450px;
-	// }
-    .txtNormal {
-        font-size: 1.4rem;
-    }
-    .txtSmall {
-        font-size: 1.15rem;
-    }
-    .fontNormal {
-        font-size: 1.8rem;
-    }
-    .fontNormalPlus {
-        font-size: 2rem;
-    }
-    .fontBigMinus {
-        font-size: 2.25rem;
-    }
-    .fontBig {
-        font-size: 2.5rem;
-    }
-    .fontBigPlus {
-        font-size: 2.75rem;
-    }
-    .fontGrande {
-        font-size: 3.25rem;
-    }
-    .fontXl {
-        font-size: 3.75rem;
-    }
-    .fontTitle {
-        font-size: 4.25rem;
-    }
-    h1 {
-        font-size: 4.25rem;
-    }
-    h2 {
-        font-size: 3.25rem;
-    }
-    h3 {
-        font-size: 2.75rem;
-    }
-    h4 {
-        font-size: 2.25rem;
-    }
-    h5 {
-        font-size: 1.75rem;
-    }
-    h6 {
-        font-size: 1.4rem;
-    }
-    body {
-        font-size: 0.95rem;
-    }
-    .small-text {
-        font-size: 0.8rem;
-    }
-    .extra-small-text {
-        font-size: 0.7rem;
-    }
-}
-
-@media (max-width: 1366px) { /* For screens smaller than 1280px */
-	.rowLista{
-		padding:10px 0px !important;
-	}
-	.imgMulher{
-		position: absolute !important; 
-		right: -150px !important; 
-		z-index: 999 !important; 
-		bottom: 0 !important; 
-		width: 650px !important; 
-	}
-    .produtoCta{
-        max-width: 400px !important;
-    }
-	.textBoxMulher{
-
-	}
-	.produtoCta{
-		width: 300px;
-	}
-    .txtNormal {
-        font-size: 1.25rem;
-    }
-    .txtSmall {
-        font-size: 1rem;
-    }
-    .fontNormal {
-        font-size: 1.5rem;
-    }
-    .fontNormalPlus {
-        font-size: 1.75rem;
-    }
-    .fontBigMinus {
-        font-size: 2rem;
-    }
-    .fontBig {
-        font-size: 2.25rem;
-    }
-    .fontBigPlus {
-        font-size: 2.5rem;
-    }
-    .fontGrande {
-        font-size: 3rem;
-    }
-    .fontXl {
-        font-size: 3.5rem;
-    }
-    .fontTitle {
-        font-size: 4rem;
-    }
-    h1 {
-        font-size: 4rem;
-    }
-    h2 {
-        font-size: 3rem;
-    }
-    h3 {
-        font-size: 2.5rem;
-    }
-    h4 {
-        font-size: 2rem;
-    }
-    h5 {
-        font-size: 1.5rem;
-    }
-    h6 {
-        font-size: 1.25rem;
-    }
-    body {
-        font-size: 0.9rem;
-    }
-    .small-text {
-        font-size: 0.75rem;
-    }
-    .extra-small-text {
-        font-size: 0.65rem;
-    }
-}
-@media(max-width:1024px){
-    .produtoCta{
-        max-width: 300px !important;
-        margin:0;
-    }
-    .ctaText{
-        ul{
-            text-align: center !important;
-        }
-    }
-    .sectionDois{
-        min-height: 30dvh !important;
-    }
-    .btnPìnkCustom{
-        margin:0 auto; margin-left:100px; margin-bottom:10px;
-    }
-    .mulherSaltando{
-        height: 450px;
-        float:center;
-    }
-    .boxSaltando{
-        margin: 0 !important;
-    }
-    .btnPinkCustom{
-       margin-left:0 !important;
-    }
-    .rowCustom{
-        min-height:30dvh !important; 
-        padding-top:30px !important;
-    }
- 
-    .textBoxMulher{
-        display: flex
-;
-    flex-direction: column;
-    justify-content: space-around;
-     min-height: 30vh !important; 
-    padding: 10px 0px 10px 140px;
-    text-align: start;
-
-    }
-    .boxBlue{
-        margin-top:25%;
-    }
-    .listaIcons{
-        li{
-            img{
-                width: 100px !important;
-
-            }
-        }
-    }
-    .card{
-        svg{
-            width: 100px !important;
-        }
-    }
-
-    #mulherSorrindo{
-    
-    height: 450px !important;
-    float: center !important;
-
-    }
-}
-@media (max-width: 768px) { /* For tablets and smaller screens */
-    #firstSection{
-        min-height: 30dvh !important;
-        background-position: right !important;
-        padding: 20px 0px;
-    }
-    .produtoCta{
-        float: none !important;
-        display: block !important;
-        margin: 0 auto !important;
-       
-    }
-    .imgMulher{
-        width: 500px !important;
-    }
-    .mulherSaltando{
-        float:none !important;
-    }
-    .textBoxMulher{
-        padding: 20px !important;
-        margin: 0 auto !important;
-        text-align: center !important;
-    }
-    .boxSaltando{
-        float: none !important;
-    }
-    .listaCard{
-        flex-direction: column !important;
-        align-items: center !important;
-    }
-    #MULHERSORRINDO{
-        display: block !important;
-    margin: 0 auto !important;
-    float:none !important;
-    }
-   .logo_footer{
-    width: 200px !important;
-   }
-   #produtoSingleMobile{
-    float:right !important;
-   }
-   .btnPink{
-       margin: 0 auto !important;
-    margin-top:52px !important;
-   }
-   .txtBoxAguaMobile{
-    margin-bottom:40px !important;
-   }
-   .navbar-brand{
-    a{
-        img{
-            width: 100px !important;
-    height: 40px !important;
-        };
-    }
-   }
-   .rowCustomTwo{
-    padding: 20px 0px !important;
-   }
-   .whiteRow{
-    min-height: 30vh !important;
-   }
-   .customList{
-    padding:10px !important;
-    li{
-        margin: 10px 0px !important;
-    }
-   }
-  
-
-    .txtNormal {
-        font-size: 1rem !important;
-    }
-    .txtSmall {
-        font-size: 0.875rem !important;
-    }
-    .fontNormal {
-        font-size: 1.25rem !important;
-    }
-    .fontNormalPlus {
-        font-size: 1.5rem !important;
-    }
-    .fontBigMinus {
-        font-size: 1.75rem !important;
-    }
-    .fontBig {
-        font-size: 2rem !important;
-    }
-    .fontBigPlus {
-        font-size: 2.25rem !important;
-    }
-    .fontGrande {
-        font-size: 2.5rem !important;
-    }
-    .fontXl {
-        font-size: 3rem !important;
-    }
-    .fontTitle {
-        font-size: 3.5rem !important;
-    }
-    h1 {
-        font-size: 3.5rem !important;
-    }
-    h2 {
-        font-size: 2.75rem !important;
-    }
-    h3 {
-        font-size: 2.25rem !important;
-    }
-    h4 {
-        font-size: 1.75rem !important;
-    }
-    h5 {
-        font-size: 1.25rem !important;
-    }
-    h6 {
-        font-size: 1rem !important;
-    }
-    body {
-        font-size: 0.85rem !important;
-    }
-    .small-text {
-        font-size: 0.7rem !important;
-    }
-    .extra-small-text {
-        font-size: 0.6rem !important;
-    }
-}
-
-@media(max-width:766px){
-    .product-details, .product-price, .product-title, .product-short-description{
-        text-align:center;
-    }
-    .navbar-nav{
-        position: fixed;
-        right: 0;
-        height: 100vh;
-        top: 0px;
-        background: white;
-        z-index: 1050;
-        padding: 20px;
-        justify-content: start;
-        width: 70%;
-        
-        li{
-            a{
-                color:$pink;
-            }
-        }
-        
-    }
-    .textBoxSingle{
-        width: 125px;
-    }
-    .navbar-collapse{
-        flex-basis: 0;
-        flex-grow: 0;
-        transition: all 0.3s ease;
-        transition: max-height 0.5s ease;
-    
-    }
-    #logoAzul{
-        max-width: 150px;
-    }
-.produtoCta, .btnPink, .btnPinkCustom, .imgCientistaMobile{
-    max-width: 250px !important;
-    margin: 0 auto !important;
-}
-.mulherSaltando{
-    height: 250px !important;
-}
-.textBoxMulher, .customList{
-    padding: 10px !important
-}
-.imgMulherMobile{
-    max-width: 250px !important;
-   
-}
-#MULHERSORRINDO{
-    width: 250px !important;
-    height: 350px !important;
-}
-.iconeQuimica{
-    width: 250px !important;
-}
-.produtoSingleMobile{
-    width: 150px !important;
-}
-
-.txtBox{
-    padding: 10px !important;
-    margin: 0 auto !important;
-}
-
-.whiteRow{
-    min-height: 30vh !important;
-}
-.listaCard{
-    margin: 0 auto !important;
-    padding:10px !important;
-    .card{
-        width: 250px !important;
-        margin: 0 auto !important;
-    }
-}
-
-.listaBen{
-    ul{
-        padding:10px !important;
-    }
-}
-.txtBoxSingle{
-    h2{
-        width: 40px !important;
-    }
-}
-.boxSaltando{
-    padding: 0 20px;
-}
- .txtNormal {
-        font-size: 0.75rem !important;
-    }
-    .txtSmall {
-        font-size: 0.625rem !important;
-    }
-    .fontNormal {
-        font-size: 0.875rem !important;
-    }
-    .fontNormalPlus {
-        font-size: 1rem !important;
-    }
-    .fontBigMinus {
-        font-size: 1.25rem !important;
-    }
-    .fontBig {
-        font-size: 1.5rem !important;
-    }
-    .fontBigPlus {
-        font-size: 1.75rem !important;
-    }
-    .fontGrande {
-        font-size: 2rem !important;
-    }
-    .fontXl {
-        font-size: 2.25rem !important;
-    }
-    .fontTitle {
-        font-size: 2.5rem !important;
-    }
-    h1 {
-        font-size: 2.5rem !important;
-    }
-    h2 {
-        font-size: 2rem !important;
-    }
-    h3 {
-        font-size: 1.75rem !important;
-    }
-    h4 {
-        font-size: 1.25rem !important;
-    }
-    h5 {
-        font-size: 0.875rem !important;
-    }
-    h6 {
-        font-size: 0.75rem !important;
-    }
-    body {
-        font-size: 0.65rem !important;
-    }
-    .small-text {
-        font-size: 0.55rem !important;
-    }
-    .extra-small-text {
-        font-size: 0.5rem !important;
-    }
-}
-
-@media(max-width:425px){
-    .listaIconsCustom{
-    flex-direction: column !important;
-    li{
-        img{
-            max-width: 60px !important;
-        }
-    }
-    }
-    .productItemBox{
-        width: 250px !important;
-        height: auto !important;
-        padding: 12px  !important;
-    }
-    .imgMulherMobile{
-        float: none !important;
-        margin: 0 auto !important;
-    }
-}
-/*
-
-	ESTILOS
-
-*/
-
 
 
 .carousel-item {
@@ -702,24 +56,36 @@ body {
 }
 
 .headerLine{
-	display: inline-block; /* Ensure it fits inside the navbar */
-  width: 2px; /* Set the thickness of the vertical line */
-  height: 100%; /* Set the height of the vertical line */
-  background-color: white; /* Set the color of the line */
-  border: none; /* Remove default border */
-  margin: 0 10px;
+    display: inline-block;
+    width: 2px;
+    height: 80%;
+    background-color: white;
+    border: none;
+    margin: 13px 25px;
+
 }
 footer{
 
 	// height:300px;
 	// padding:5% 0;
 }
+.listaFaq{
+    padding:0;
+    width: 300px;
+    display:block;
+    margin: 24px auto;
+    list-style: none;
+    text-align: start;
+    
+}
 .nav-link{
 	color:white;
+    font-size:large;
+    letter-spacing:2px;
 }
 #navbarsExampleDefault{
-	background: #39C4D9;
-	height:120px;
+	// background: #39C4D9;
+    height: 90px;
 }
 .banner{
 	background: url(img/BACKGROUND_BANNER.jpg) no-repeat center center;
@@ -727,13 +93,12 @@ footer{
     min-height: 77vh;
     
 }
-.produtoCta{
-	width: 490px ;
-    /* height: 600px !important; */
-    float: left;
-    margin-left: 70px;
-    margin-top: 20px;
+.banner_mobile{
+    background: url(img/BACKGROUND_BANNER_MOBILE.jpg) no-repeat right center;
+    background-size: cover;
+    min-height: 77vh; 
 }
+
 .productItemBox{
 	// border: 1px solid black;
     width: 320px;
@@ -775,29 +140,100 @@ background:#e83e8c;
     border-radius:25px;
     padding:25px;
 }
-.btnPink{
-	background-color: #e83e8c;
+.rowCustomReverse{
+    
+    flex-direction:row-reverse;
+}
+.btnPink {
+    background-color: #e83e8c;
     display: block;
     color: white;
     border-radius: 35px;
     font-weight: bold;
-    letter-spacing: 1px;
-    width: 400px;
-    /* height: 70px; */
-    font-size: 1.75rem;
-    /* padding: 17px; */
-    /* max-width: 30%; */
-    /* margin: 10px 0px; */
-    height: 70px;
-    /* margin-top: 64px; */
     letter-spacing: 3px;
-	margin: 0 auto;
+    font-size: 1.5rem;
+    /* height: 70px; */
+    margin: 12px auto;
+    padding: 12px 30px;
+    min-width: 250px;
+    max-width: 350px;
+
+    &:hover {
+        opacity: 0.7;
+        cursor: pointer;
+    }
 }
+.cartCount{
+    position: relative;
+    top: -2px;
+    right: 16px;
+    font-size: 12px;
+}
+.cartCountMobile{
+    position: relative;
+ 
+    right: 25px;
+    font-size: 12px;
+    bottom: 10px;
+}
+.navbarMobile{
+    list-style-type:none;
+     display:flex;
+      flex-direction:row;
+       width:100%;
+       li{
+        
+           margin:6px;
+          .cls-1{
+            fill:white !important;
+          }
+            svg{
+                display:block;
+                height: 50px;
+                width:50px;
+                
+            }
+           }
+       
+}
+    
+
+@media(max-width:1125px){
+    .cartCount{
+      
+        top: -61px;
+        right: -34px;
+        
+    }
+    }
+
+.woocommerce-notices-wrapper{
+    h2{
+        color:$pink !important;
+    }
+}
+.woocommerce-form-login {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .woocommerce-form-login p {
+    display: block;
+    text-align: center;
+  }
+  .woocommerce-form-login p label {
+    color: #e83e8c !important;
+  }
+  .woocommerce-form-login p .password-input {
+    width: 100%;
+  }
+  
 .ctaText{
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
-	margin-top:65px;
+	margin: 60px 0px;
 	
 	ul{
 		padding:0;
@@ -808,11 +244,7 @@ background:#e83e8c;
 	
 	
 }
-.listaCta{
-	li{
-		margin:30px 0px 70px 0px;
-	}
-}
+
 .sectionMicelar{
     padding:10% 0px;
 }
@@ -851,9 +283,24 @@ background:#e83e8c;
 .row-products{
     padding: 40px 0px;
 }
+.customTracking{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: start;
+    *{
+        color:$pink;
+    }
+    margin:24px 0px;
+}
 .woocommerce-breadcrumb{
+    background:#eeeeee;
     a{
-        color:$pink !important;
+      
+       
+
+            color:$pink !important;
+       
     }
 }
 .greyBg{
@@ -1062,8 +509,7 @@ img{
 }
 
 #firstSection{
-	min-height: 70dvh;
-	padding:0px 0px 50px 0px;
+    padding:52px 0px 0px 0px;
 }
 .sectionDois{
 	min-height: 90dvh;
@@ -1076,3 +522,682 @@ img{
 	max-width:150px !important;
     max-height:150px !important;
 }
+.boxSaltando{
+    float:left; margin:95px 0px 0px 100px; 
+}
+.custom-logo{
+    width: 125px ;
+    height: auto;
+    margin-top: 6px ;
+}
+.listaManual{
+    padding:0;
+     display:flex;
+      flex-direction:row;
+       list-style-type:none;
+        justify-content:space-evenly;
+        
+         margin:24px 0px;
+    li{
+        a{
+            color:black;
+        }
+    }
+}
+.listaIconsMicelar{
+    padding:0;
+    display:flex;
+    flex-direction:column;
+    list-style-type:none !important;
+    width: 100%;
+    li{
+        display:inline-flex;
+        width: 100%;
+        p{
+            width: 100%;
+            margin: 6px 0px 0px 12px;
+        }
+        
+        img{
+            width: 40px; 
+            
+        }
+    }
+    
+}
+.textBoxMulher{
+	
+	display: flex
+	;
+		flex-direction: column;
+		justify-content: space-around;
+		min-height: 90vh;
+		padding: 25px 25% 0px 20%;
+		text-align: start;
+}
+.mulherSaltando{
+	height:690px;
+	 float:right;
+}
+.showcoupon{
+    color:$pink;
+}
+.woocommerce-info::before{
+    color:$pink;
+}
+.woocommerce-info{
+    border-color:$pink;
+}
+.billingsWrapper{
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap:wrap !important;
+    justify-content: space-evenly !important;
+    max-width: 800px;
+    margin: 0 auto !important;
+    background:#eeeeee;
+    p{
+        display: block !important;
+        max-width: 200px !important;
+        label{
+            color:#666cfe !important;
+        }
+       
+    }
+}
+.product-name, .product-total{
+    color:$pink;
+
+
+}
+.cart_item{
+    .product-name, .product-total{
+        color:#666cfe;
+    
+    
+    }
+}
+.woocommerce-shipping-totals, .order-total{
+th{
+    color:$pink;
+}
+td{
+    color:$pink;
+}
+}
+.cart-subtotal{
+    color:$pink;
+}
+.customShipping{
+            
+}
+
+.card-header{
+    display: block;
+    // width: 100vw;
+    background-color: #666cfe;
+    border-radius: 25px !important;
+    button{
+
+        color:white !important;
+    }
+}
+.contatoText{
+    padding: 0;
+    list-style-type: none;
+}
+.linePink{
+    background-color: $pink;
+    color: white;
+    width: 100%;    
+    text-align: center;
+    margin:32px 0px;
+}
+.navbar{
+    position:absolute;
+}
+.nav-link:hover{
+    color:$pink !important;
+    opacity: 0.7   ;
+}
+.navbar-nav{
+    width: 950px;
+    justify-content: space-between;
+    .nav-link{
+        padding-top: 19px;
+    }
+}
+.woocommerce-MyAccount-navigation{
+
+    ul{
+        padding: 0 !important  ;
+        list-style-type: none !important;
+        text-align: start !important;
+        li{
+            a{
+
+                font-size: 1.5rem !important;
+                color:$pink !important;
+            }
+        }
+    }
+}
+.woocommerce-Address{
+    width: 100% !important;
+}
+.modoUsar{
+    width: 100%;
+    padding:0;
+    list-style-type: none;
+}
+.btn-link{
+    color:$pink !important;
+    width: 100%;
+    text-align: center;
+}
+.woocommerce-MyAccount-content{
+    text-align: start;
+    p{
+        strong, a{
+            color:$pink !important;
+        }
+    }
+}
+.customObs{
+    label{
+        color:$pink !important;
+    }
+    .woocommerce-input-wrapper{
+        width: 100% !important;
+    }
+}
+
+#place_order{
+    background-color: $pink;
+    width: 100%;
+}
+.navbar-collapse{
+    justify-content: center !important;
+}
+.productCustom{
+    box-shadow: 10px 10px 41px 0px rgba(0, 0, 0, 0.75);
+    padding: 48px 12px;
+    border-radius:25px;
+}
+.btnPurple{
+    border: 1px solid #666cfe;
+    color:#666cfe;
+    padding:12px;
+     border-radius: 25px;
+}
+.modoUsar{
+    padding:12px;
+    border: 2px solid #666cfe;
+    margin:24px 0px;
+}
+     
+.cardCustom{
+    background:#eeeeee;
+    box-shadow: 10px 10px 41px 0px rgba(0, 0, 0, 0.75);
+    display:flex;
+    flex-direction: column;
+    width: 250px;
+    height: 250px;
+    border-radius:25px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 25px auto;
+    padding: 12px;
+}
+
+.textBlue{
+	color:$roxo !important; 
+}
+.textWhite{
+	color:white;
+}
+.textPink{
+	color:$pink;
+}
+.formEmbaixadores{
+    max-width: 350px;
+    margin:0 auto;
+}
+
+.greyText{
+	color:#848381;
+}
+/* Default font sizes (for 2K screens) */
+
+
+body {
+    font-size: 1rem;
+}
+
+.rowCustom{
+    min-height:139dvh; padding-top:90px;
+}
+.rowCustomTwo{
+    background-color:#3cc6db;
+}
+.imgMulherMobile{
+    float: right;
+    margin: 0px 40px 0px 0px;
+}
+.textBoxSingle{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 200px;
+}
+.produtoCta{
+    width: 360px;
+    /* height: 600px !important; */
+    float: left;
+}
+
+
+/* Responsive font sizes */
+@media (max-width: 1920px) { /* For screens smaller than 2K */
+	.rowLista{
+		padding:20px 250px !important;
+	}
+	
+	// .mulherSaltando{
+	// 	height: 450px;
+	// }
+   
+   
+    body {
+        font-size: 0.95rem;
+    }
+    .small-text {
+        font-size: 0.8rem;
+    }
+    .extra-small-text {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 1366px) { /* For screens smaller than 1280px */
+	.rowLista{
+		padding:10px 0px !important;
+	}
+	.imgMulher{
+		position: absolute !important; 
+		right: -150px !important; 
+		z-index: 999 !important; 
+		bottom: 0 !important; 
+		width: 650px !important; 
+	}
+    .produtoCta{
+        max-width: 400px !important;
+    }
+	.textBoxMulher{
+
+	}
+	.produtoCta{
+		width: 300px;
+	}
+   
+    
+    body {
+        font-size: 0.9rem;
+    }
+  
+}
+@media(max-width:1024px){
+    .produtoCta{
+        max-width: 300px !important;
+        margin:0;
+    }
+    .ctaText{
+        ul{
+            text-align: center !important;
+        }
+    }
+    .sectionDois{
+        min-height: 30dvh !important;
+    }
+    .btnPìnkCustom{
+        margin:0 auto; margin-left:100px; margin-bottom:10px;
+    }
+    .mulherSaltando{
+        height: 450px;
+        float:center;
+    }
+    .boxSaltando{
+        margin: 0 !important;
+    }
+    .btnPinkCustom{
+       margin-left:0 !important;
+    }
+    .rowCustom{
+        min-height:30dvh !important; 
+        padding-top:30px !important;
+    }
+ 
+    .textBoxMulher{
+        display: flex
+;
+    flex-direction: column;
+    justify-content: space-around;
+     min-height: 30vh !important; 
+    padding: 10px 0px 10px 140px;
+    text-align: start;
+
+    }
+    .boxBlue{
+        margin-top:25%;
+    }
+    .listaIcons{
+        li{
+            img{
+                width: 100px !important;
+
+            }
+        }
+    }
+    .card{
+        svg{
+            width: 100px !important;
+        }
+    }
+
+    #mulherSorrindo{
+    
+    height: 450px !important;
+    float: center !important;
+
+    }
+}
+@media (max-width: 768px) { /* For tablets and smaller screens */
+    .billingsWrapper{
+        
+        flex-direction: column !important;
+        text-align: center !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    
+    .listaIconsCustom{
+    // flex-direction: column !important;
+    li{
+        img{
+            max-width: 60px !important;
+        }
+    }
+    }
+    .productItemBox{
+        width: 250px !important;
+        height: auto !important;
+        padding: 12px  !important;
+    }
+    .imgMulherMobile{
+        float: none !important;
+        margin: 0 auto !important;
+    }
+    #firstSection{
+        min-height: 30dvh !important;
+        background-position: right !important;
+        padding: 20px 0px;
+    }
+    .produtoCta{
+        float: none !important;
+        display: block !important;
+        margin: 0 auto !important;
+       
+    }
+    .imgMulher{
+        width: 500px !important;
+    }
+    .mulherSaltando{
+        float:none !important;
+    }
+    .textBoxMulher{
+        padding: 20px !important;
+        margin: 0 auto !important;
+        text-align: center !important;
+    }
+    .boxSaltando{
+        float: none !important;
+    }
+    .listaCard{
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    #MULHERSORRINDO{
+        display: block !important;
+    margin: 0 auto !important;
+    float:none !important;
+    }
+   .logo_footer{
+    width: 200px !important;
+   }
+   #produtoSingleMobile{
+    float:right !important;
+   }
+   .btnPink{
+       margin: 0 auto !important;
+    margin-top:52px !important;
+   }
+   .txtBoxAguaMobile{
+    margin-bottom:40px !important;
+   }
+   .navbar-brand{
+    a{
+        img{
+            width: 100px !important;
+    height: 40px !important;
+        };
+    }
+   }
+   .rowCustomTwo{
+    padding: 20px 0px !important;
+   }
+   .whiteRow{
+    min-height: 30vh !important;
+   }
+   .customList{
+    padding:10px !important;
+    li{
+        margin: 10px 0px !important;
+    }
+   }
+  
+
+   
+   
+    body {
+        font-size: 0.85rem !important;
+    }
+    .small-text {
+        font-size: 0.7rem !important;
+    }
+    .extra-small-text {
+        font-size: 0.6rem !important;
+    }
+}
+
+@media(max-width:766px){
+    .product-details, .product-price, .product-title, .product-short-description{
+        text-align:center;
+    }
+    .custom-logo{
+        width: 125px !important;
+        height: 50px !important;
+        margin-top: 6px !important;
+    }
+    .productCustom{
+        margin: 32px auto !important;
+    }
+    .listaManual{
+        flex-direction:column !important;
+    }
+
+    #navbarResponsive.show{
+        transform: translateX(0);
+    }
+    #navbarResponsive {
+        transform: translateX(250px); /* Hidden off-screen by default */
+        transition: transform 250ms ease-in-out;
+        height: 100vh;
+        background: white;
+        position: fixed;
+        right: 0;
+        top: 0;
+        padding: 20px;
+        z-index: 1050 !important;
+
+        
+      }
+
+      .nav-item{
+        a{
+            color: #666cfe !important;
+            font-size: 1.255rem !important;
+            letter-spacing: 0px !important;
+        }
+      }
+      .navbar-toggler{
+       
+      }
+    
+      
+      
+   
+    .textBoxSingle{
+        width: 125px;
+    }
+    .navbar-collapse{
+        flex-basis: 0;
+        flex-grow: 0;
+        transition: all 0.3s ease;
+        transition: max-height 0.5s ease;
+    
+    }
+    #logoAzul{
+        max-width: 150px;
+    }
+.produtoCta, .btnPink, .btnPinkCustom, .imgCientistaMobile{
+    max-width: 250px !important;
+    margin: 0 auto !important;
+    padding:12px !important;
+}
+.mulherSaltando{
+    height: 250px !important;
+}
+.textBoxMulher, .customList{
+    padding: 10px !important
+}
+.imgMulherMobile{
+    max-width: 250px !important;
+   
+}
+#MULHERSORRINDO{
+    width: 250px !important;
+    height: 350px !important;
+}
+.iconeQuimica{
+    width: 250px !important;
+}
+.produtoSingleMobile{
+    width: 150px !important;
+}
+
+.txtBox{
+    padding: 10px !important;
+    margin: 0 auto !important;
+}
+
+.whiteRow{
+    min-height: 30vh !important;
+}
+.listaCard{
+    margin: 0 auto !important;
+    padding:10px !important;
+    .card{
+        width: 250px !important;
+        margin: 0 auto !important;
+    }
+}
+
+.listaBen{
+    ul{
+        padding:10px !important;
+    }
+}
+.txtBoxSingle{
+    h2{
+        width: 40px !important;
+    }
+}
+.boxSaltando{
+    padding: 0 20px;
+}
+ 
+  
+    body {
+        font-size: 0.65rem !important;
+    }
+    .small-text {
+        font-size: 0.55rem !important;
+    }
+    .extra-small-text {
+        font-size: 0.5rem !important;
+    }
+}
+@media(max-width:450px) {
+    .billingsWrapper {
+        flex-direction: column !important;
+        text-align: center !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .listaIconsCustom {
+        flex-direction: column !important;
+
+        li {
+            img {
+                max-width: 60px !important;
+            }
+        }
+    }
+
+    .productItemBox {
+        width: 250px !important;
+        height: auto !important;
+        padding: 12px !important;
+    }
+
+    .imgMulherMobile {
+        float: none !important;
+        margin: 0 auto !important;
+    }
+
+    .custom-logo {
+        height: 45px !important;
+        margin-top: 6px !important;
+        width: 145px !important;
+    }
+    .headerLine{
+        height:80% !important;
+    }
+    .productItemBox{
+        box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.75) !important;
+    }
+    .btnPink{
+        margin: 24px auto !important;
+        
+    }
+}
+/*
+
+	ESTILOS
+
+*/
+
