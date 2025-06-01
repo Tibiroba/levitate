@@ -10018,11 +10018,35 @@ h3 {
   }
 }
 * {
-  font-family: "MyriadPro-Regular";
+  font-family: "MyriadPro-Regular" !important;
 }
 
 b, .fontBold {
-  font-family: "MyriadPro-Bold";
+  font-family: "MyriadPro-Bold" !important;
+}
+
+.font-xxlarge {
+  font-size: 3rem;
+}
+
+.font-xlarge {
+  font-size: 2rem;
+}
+
+.font-large {
+  font-size: 1.5rem;
+}
+
+.font-medium {
+  font-size: medium;
+}
+
+.font-small {
+  font-size: small;
+}
+
+.font-xsmall {
+  font-size: x-small;
 }
 
 a:hover {
@@ -10087,6 +10111,12 @@ a:hover {
   letter-spacing: 2px;
 }
 
+.btnPinkCustom {
+  margin: 0 auto !important;
+  max-width: 300px;
+  width: 100%;
+}
+
 #navbarsExampleDefault {
   height: 90px;
 }
@@ -10094,13 +10124,20 @@ a:hover {
 .banner {
   background: url(img/BACKGROUND_BANNER.jpg) no-repeat center center;
   background-size: cover;
-  min-height: 77vh;
+  min-height: 68vh;
 }
 
 .banner_mobile {
   background: url(img/BACKGROUND_BANNER_MOBILE.jpg) no-repeat right center;
   background-size: cover;
   min-height: 77vh;
+}
+
+.boxBlue {
+  float: right;
+  text-align: start;
+  padding-right: 15px;
+  width: 540px;
 }
 
 .productItemBox {
@@ -10154,12 +10191,10 @@ a:hover {
   border-radius: 35px;
   font-weight: bold;
   letter-spacing: 3px;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+  padding: 10px;
   /* height: 70px; */
-  margin: 12px auto;
-  padding: 12px 30px;
-  min-width: 250px;
-  max-width: 350px;
+  max-width: 300px;
 }
 .btnPink:hover {
   opacity: 0.7;
@@ -10230,9 +10265,9 @@ a:hover {
 
 .ctaText {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
-  margin: 60px 0px;
+  text-align: start;
 }
 .ctaText ul {
   padding: 0;
@@ -10241,7 +10276,11 @@ a:hover {
 }
 
 .sectionMicelar {
-  padding: 10% 0px;
+  padding: 52px 0px;
+}
+
+.lh-40 {
+  line-height: 40px;
 }
 
 .whiteRow {
@@ -10315,21 +10354,17 @@ a:hover {
   padding: 0;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   text-align: center;
-  margin: 40px 0 65px 0;
 }
 .listaCard .card {
-  width: 315px;
-  height: 305px;
+  width: 235px;
+  height: 225px;
   text-align: center;
   background: white;
   border-radius: 25px;
   align-items: center;
-}
-.listaCard .card span {
-  font-size: 2.25rem;
-  font-weight: bold;
+  padding: 32px;
 }
 .listaCard img {
   height: 140px;
@@ -10351,6 +10386,10 @@ a:hover {
   padding: 5% 0;
 }
 
+.letterSpacingTitle {
+  letter-spacing: 2px;
+}
+
 .listaBen {
   display: flex;
   flex-direction: row;
@@ -10360,10 +10399,7 @@ a:hover {
   padding: 0;
   list-style-type: disc;
   padding-right: 100px;
-}
-.listaBen ul li {
-  font-weight: bold;
-  font-size: 2.5rem;
+  line-height: 40px;
 }
 .listaBen ul li::marker {
   color: #666cfe;
@@ -10378,26 +10414,33 @@ a:hover {
 
 .imgMulher {
   position: absolute;
-  right: -200px;
+  right: -144px;
   z-index: 999;
   bottom: 0;
-  width: 760px;
+  width: 570px;
 }
 
 .imgCientista {
-  float: right;
-  width: 75%;
   /* margin: 15% 0px; */
 }
 
+.sectionCientista {
+  padding: 92px 0 96px 0;
+}
+
 .rowTransicao {
-  padding: 7vh 0;
+  padding: 32px 0;
 }
 .rowTransicao p {
   color: white;
+  letter-spacing: 0px !important;
 }
 .rowTransicao img {
   margin-top: 50px;
+}
+
+#niami {
+  padding: 70px 0px;
 }
 
 .nuvemBgDup {
@@ -10410,9 +10453,23 @@ a:hover {
 }
 
 .txtBox {
-  min-height: 300px;
+  min-height: 410px;
   display: flex;
   flex-direction: column;
+  max-width: 410px;
+  float: right;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.txtBoxLeft {
+  min-height: 410px;
+  display: flex;
+  flex-direction: column;
+  max-width: 570px;
+  float: left;
+  height: 100%;
+  justify-content: space-evenly;
 }
 
 .txtBoxAgua {
@@ -10420,7 +10477,8 @@ a:hover {
   display: flex;
   flex-direction: column;
   text-align: start;
-  /* max-width: 300px; */
+  max-width: 350px;
+  width: 100%;
   /* min-height: 200px; */
 }
 
@@ -10447,19 +10505,46 @@ a:hover {
 
 #MULHERSORRINDO {
   float: right;
-  width: 400px;
-  margin: 72px -20px 0 0px;
-  height: 517px;
+  width: 290px;
+  height: auto;
+  margin-right: 2rem;
+}
+
+#iconeQuimica {
+  width: 300px;
+  height: auto;
+  margin-top: 56px;
+  margin: 56px 0px 0px 10px;
 }
 
 #produtoSingle {
-  width: 214px;
-  margin-left: 105px;
+  width: 162px;
+  height: auto;
+  /* margin-left: 105px; */
+  float: right;
 }
 
 .customList {
   list-style: none;
-  padding: 35px 0 0 110px;
+}
+
+.word-wrap {
+  word-wrap: break-word;
+}
+
+.listaIconsFooter {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.listaIconsFooter li {
+  max-width: 200px;
+  margin: 0 8px;
+  text-align: center;
+}
+.listaIconsFooter li img {
+  width: 110px;
 }
 
 .listaIcons {
@@ -10469,12 +10554,12 @@ a:hover {
   justify-content: space-evenly;
 }
 .listaIcons li {
-  width: 100%;
+  max-width: 200px;
   margin: 0 8px;
   text-align: center;
 }
 .listaIcons li img {
-  width: 150px;
+  width: 110px;
 }
 
 .sectionMicelar .nuvemRoxa {
@@ -10486,11 +10571,10 @@ a:hover {
 }
 
 #firstSection {
-  padding: 52px 0px 0px 0px;
+  padding: 106px 0px 0px 0px;
 }
 
 .sectionDois {
-  min-height: 90dvh;
   padding: 10px 0px;
 }
 
@@ -10501,7 +10585,7 @@ a:hover {
 
 .boxSaltando {
   float: left;
-  margin: 95px 0px 0px 100px;
+  width: 100%;
 }
 
 .custom-logo {
@@ -10544,14 +10628,14 @@ a:hover {
 .textBoxMulher {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  min-height: 90vh;
-  padding: 25px 25% 0px 20%;
+  justify-content: start;
+  padding: 0 160px;
   text-align: start;
+  height: 100%;
 }
 
 .mulherSaltando {
-  height: 690px;
+  height: 520px;
   float: right;
 }
 
@@ -10752,8 +10836,7 @@ body {
 }
 
 .rowCustom {
-  min-height: 139dvh;
-  padding-top: 90px;
+  min-height: 80dvh;
 }
 
 .rowCustomTwo {
