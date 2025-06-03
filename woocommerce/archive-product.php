@@ -7,13 +7,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 get_header(); ?>
 
 <div class="container my-5">
-    <h1 class="text-center textPink mb-4 text-uppercase" style="letter-spacing:2px;">Produtos</h1>
+    <h1 class="text-center textPink mb-4 text-uppercase font-xlarge" style="letter-spacing:2px;">Produtos</h1>
 
     <?php if ( woocommerce_product_loop() ) : ?>
         <div class="row">
             <div class="col-12 p-0">
                 <!-- Horizontal Scroll Container -->
-                <div class="product-scroll-container d-flex" style="overflow-x:scroll; padding:60px 0px; margin:20px 0px;">
+                <div class="product-scroll-container d-flex" style="overflow-x:scroll; padding:30px 0px; margin:20px 0px;">
                     <?php while ( have_posts() ) : ?>
                         <?php the_post(); ?>
                         <div class="product-item card mx-2 productItemBox" style="min-width: 300px; height:auto;">
@@ -22,9 +22,9 @@ get_header(); ?>
                                     <img src="<?php the_post_thumbnail_url( 'medium' ); ?>" class="card-img-top" style="max-width:200px;" alt="<?php the_title(); ?>">
                                 <?php endif; ?>
                                 <div class="card-body">
-                                    <h4 class="card-title textPink"><?php the_title(); ?></h4>
-                                    <p class="card-text greyText fontNormal"><?php echo wc_get_product( get_the_ID() )->get_price_html(); ?></p>
-                                    <a href="<?php the_permalink(); ?>" class="btn bgPink text-white mt-3">Ver Produto</a>
+                                    <h4 class="card-title textPink font-large"><?php the_title(); ?></h4>
+                                    <p class="card-text greyText font-medium"><?php echo wc_get_product( get_the_ID() )->get_price_html(); ?></p>
+                                    <a href="<?php the_permalink(); ?>" class="btn bgPink text-white mt-3 font-large">Ver Produto</a>
                                 </div>
                             </a>
                         </div>

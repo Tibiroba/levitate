@@ -1,6 +1,8 @@
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 @import 'colors';
 @import './fonts/fonts.css';
+// @import './fontAwesome.css';
+
 
 
 
@@ -103,10 +105,17 @@ footer{
     text-align: start;
     
 }
+.fa{
+    font:normal normal normal 14px/1 FontAwesome  !important;
+}
 .nav-link{
 	color:white;
     font-size:large;
     letter-spacing:2px;
+}
+.bg-customBlue{
+    background:#3cc6db;
+    position:relative !important;
 }
 .btnPinkCustom{
     margin: 0 auto !important;
@@ -126,13 +135,18 @@ footer{
 .banner_mobile{
     background: url(img/BACKGROUND_BANNER_MOBILE.jpg) no-repeat right center;
     background-size: cover;
-    min-height: 77vh; 
+     
+   padding-top:100px;
 }
 .boxBlue{
     float:right;
      text-align:start;
       padding-right:15px;
      width: 540px;
+}
+.produtoCtaMobile{
+    width: 120px;
+    height: auto;
 }
 .productItemBox{
 	// border: 1px solid black;
@@ -168,7 +182,9 @@ background:#e83e8c;
     }
 }
 
-
+.listaCardSvg{
+    width: 150px;
+}
 
 .cart-item{
     box-shadow: 10px 10px 41px 0px rgba(0, 0, 0, 0.75);
@@ -179,6 +195,7 @@ background:#e83e8c;
     
     flex-direction:row-reverse;
 }
+
 .btnPink {
     background-color: #e83e8c;
     display: block;
@@ -212,11 +229,21 @@ background:#e83e8c;
     font-size: 12px;
     bottom: 10px;
 }
+.imgCientistaMobile{
+    width: 110px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
 .navbarMobile{
     list-style-type:none;
      display:flex;
       flex-direction:row;
+      padding:0;
+      margin:0;
+      justify-content: center;
        width:100%;
+       max-height: 70px;
        li{
         
            margin:6px;
@@ -252,7 +279,10 @@ background:#e83e8c;
     display: flex;
     flex-direction: column;
     max-width: 500px;
-    margin: 0 auto;
+    margin: 24px auto !important;
+  }
+  .woocommerce-form-login h2 {
+    font-size:large;
   }
   .woocommerce-form-login p {
     display: block;
@@ -260,6 +290,7 @@ background:#e83e8c;
   }
   .woocommerce-form-login p label {
     color: #e83e8c !important;
+    
   }
   .woocommerce-form-login p .password-input {
     width: 100%;
@@ -410,7 +441,8 @@ background:#e83e8c;
 		padding:0;
 		list-style-type: disc;
 		padding-right: 100px;
-        line-height: 40px;
+         margin-bottom:3rem;
+        
 		
 		li::marker{
 			color:$roxo;
@@ -518,6 +550,13 @@ img{
 }
 }
 
+.productBox{
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    overflow-x:scroll;
+}
+
 .nuvemRoxa{
 	background: url("img/NUVEM_06.png") no-repeat top left;
 	min-height: 100vh;
@@ -613,8 +652,9 @@ img{
 }
 
 .imgLoopProducts{
-	max-width:150px !important;
-    max-height:150px !important;
+	width: 70px;
+    height: auto;
+    max-height: 90px;
 }
 .boxSaltando{
     float:left; 
@@ -659,6 +699,19 @@ img{
         }
     }
     
+}
+.textBoxMulherMobile{
+    display: block;
+    // flex-direction: column;
+    // justify-content: center;
+    max-width: 200px;
+    text-align: start;
+    height: 100%;
+    margin: 0 auto;
+
+}
+.iconeQuimicaMobile{
+    max-width: 120px;
 }
 .textBoxMulher{
 	
@@ -757,7 +810,7 @@ td{
     opacity: 0.7   ;
 }
 .navbar-nav{
-    width: 950px;
+    width: auto;
     justify-content: space-between;
     .nav-link{
         padding-top: 19px;
@@ -896,28 +949,9 @@ body {
 }
 
 
-/* Responsive font sizes */
-@media (max-width: 1920px) { /* For screens smaller than 2K */
-	.rowLista{
-		padding:20px 250px !important;
-	}
-	
-	// .mulherSaltando{
-	// 	height: 450px;
-	// }
-   
-   
-    body {
-        font-size: 0.95rem;
-    }
-    .small-text {
-        font-size: 0.8rem;
-    }
-    .extra-small-text {
-        font-size: 0.7rem;
-    }
+.headerIconsMobile{
+    width: 20px !important;
 }
-
 @media (max-width: 1366px) { /* For screens smaller than 1280px */
 	.rowLista{
 		padding:10px 0px !important;
@@ -997,11 +1031,7 @@ body {
             }
         }
     }
-    .card{
-        svg{
-            width: 100px !important;
-        }
-    }
+    
 
     #mulherSorrindo{
     
@@ -1010,7 +1040,65 @@ body {
 
     }
 }
-@media (max-width: 768px) { /* For tablets and smaller screens */
+@media (max-width: 767px) { /* For tablets and smaller screens */
+    .card-img-top{
+        max-width: 70px !important;
+        max-height: 50px !important ;
+    }
+    .product-title, .product-price{
+        margin:12px auto !important;
+    }
+    .sectionMicelar{
+        padding:12px 0px;
+    }
+    .txtBox{
+        min-height: 230px !important;
+        display:block;
+        width: 230px;
+        margin: 0 auto;
+        float:none;
+       
+        
+        
+    }
+    .rowTransicao{
+        padding: 12px 0px;
+    }
+    .listaCard{
+        .card{
+            max-width: 120px;
+        height: 120px;
+        border-radius: 10px;
+        padding:10px;
+        }
+    }
+    .listaCardSvg{
+        width: 50px;
+    }
+.font-xxlarge {
+    font-size: 1.25rem;
+}
+
+.font-xlarge {
+    font-size: 1rem;
+}
+
+.font-large {
+    font-size: 0.75rem;
+}
+
+.font-medium {
+    font-size: 0.5rem;
+}
+
+.font-small {
+    font-size: 0.25rem;
+}
+.lh-40{
+    line-height: 20px !important;
+}
+
+
     .billingsWrapper{
         
         flex-direction: column !important;
@@ -1028,19 +1116,17 @@ body {
     }
     }
     .productItemBox{
-        width: 250px !important;
-        height: auto !important;
-        padding: 12px  !important;
+        width: 120px !important;
+        height: 240px;
+        padding: 12px !important;
+        margin-top: 20px;
+        border-radius: 10px;
     }
     .imgMulherMobile{
         float: none !important;
         margin: 0 auto !important;
     }
-    #firstSection{
-        min-height: 30dvh !important;
-        background-position: right !important;
-        padding: 20px 0px;
-    }
+   
     .produtoCta{
         float: none !important;
         display: block !important;
@@ -1065,23 +1151,18 @@ body {
         flex-direction: column !important;
         align-items: center !important;
     }
-    #MULHERSORRINDO{
-        display: block !important;
-    margin: 0 auto !important;
-    float:none !important;
-    }
+   
    .logo_footer{
     width: 200px !important;
    }
    #produtoSingleMobile{
     float:right !important;
    }
-   .btnPink{
-       margin: 0 auto !important;
-    margin-top:52px !important;
-   }
+   
    .txtBoxAguaMobile{
-    margin-bottom:40px !important;
+    margin:15px auto !important;
+    text-align: start !important;
+    max-width: 150px;
    }
    .navbar-brand{
     a{
@@ -1122,11 +1203,10 @@ body {
     .product-details, .product-price, .product-title, .product-short-description{
         text-align:center;
     }
-    .custom-logo{
-        width: 125px !important;
-        height: 50px !important;
-        margin-top: 6px !important;
-    }
+   .custom-logo{
+    width: 70px !important;
+    margin-top:12px;
+   }
     .productCustom{
         margin: 32px auto !important;
     }
@@ -1147,6 +1227,7 @@ body {
         top: 0;
         padding: 20px;
         z-index: 1050 !important;
+        max-width: 70%;
 
         
       }
@@ -1154,7 +1235,7 @@ body {
       .nav-item{
         a{
             color: #666cfe !important;
-            font-size: 1.255rem !important;
+           
             letter-spacing: 0px !important;
         }
       }
@@ -1166,7 +1247,8 @@ body {
       
    
     .textBoxSingle{
-        width: 125px;
+        width: 100px;
+        margin-top:23px;
     }
     .navbar-collapse{
         flex-basis: 0;
@@ -1178,30 +1260,52 @@ body {
     #logoAzul{
         max-width: 150px;
     }
-.produtoCta, .btnPink, .btnPinkCustom, .imgCientistaMobile{
+.produtoCta, .btnPink, .btnPinkCustom{
     max-width: 250px !important;
     margin: 0 auto !important;
     padding:12px !important;
 }
 .mulherSaltando{
-    height: 250px !important;
+    height: 210px !important;
+}
+.textEspecialista{
+    font-size:small !important;
 }
 .textBoxMulher, .customList{
     padding: 10px !important
 }
 .imgMulherMobile{
-    max-width: 250px !important;
+    max-width: 200px !important;
+    float:center;
    
 }
+#niami{
+    padding: 20px 0px !important;
+}
+.fa{
+    font-size:large !important;
+    font:normal normal normal 14px/1 FontAwesome !important;
+}
+.customList{
+    display: blcok;
+    max-width: 250px !important;
+    margin:0 auto;
+}
 #MULHERSORRINDO{
-    width: 250px !important;
-    height: 350px !important;
+    display: block !important;
+        width: 105px !important;
+        height: auto !important;
+        margin: 0 auto !important;
+        float: none !important;
 }
 .iconeQuimica{
     width: 250px !important;
 }
-.produtoSingleMobile{
-    width: 150px !important;
+#produtoSingleMobile{
+    float: right !important;
+    width: 53px;
+    height: auto;
+    margin-top:23px;
 }
 
 .txtBox{
@@ -1224,15 +1328,35 @@ body {
 .listaBen{
     ul{
         padding:10px !important;
+
+        margin:0 !important;
     }
 }
 .txtBoxSingle{
+ 
     h2{
         width: 40px !important;
     }
 }
 .boxSaltando{
     padding: 0 20px;
+}
+
+.btnPink, .btnPinkCustom{
+    background-color: #e83e8c !important;
+    display: block !important;
+    color: white !important;
+    border-radius: 35px !important;
+    font-weight: bold !important;
+    letter-spacing: 1px !important;
+    max-width: 150px !important;
+    font-size:small !important ;
+    margin:12px auto !important;
+    padding:4px !important;
+
+}
+.btnPinkCustomMobile{
+    margin:0px auto !important;
 }
  
   
@@ -1255,41 +1379,34 @@ body {
     }
 
     .listaIconsCustom {
-        flex-direction: column !important;
+  
 
         li {
+            max-width: 80px !important;
+            margin: 0 8px !important;
+            text-align: center !important;
             img {
                 max-width: 60px !important;
             }
         }
     }
 
-    .productItemBox {
-        width: 250px !important;
-        height: auto !important;
-        padding: 12px !important;
-    }
+    
 
     .imgMulherMobile {
         float: none !important;
         margin: 0 auto !important;
     }
 
-    .custom-logo {
-        height: 45px !important;
-        margin-top: 6px !important;
-        width: 145px !important;
-    }
+    
     .headerLine{
-        height:80% !important;
+        margin-top:12px;
+        height:60% !important;
     }
     .productItemBox{
         box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.75) !important;
     }
-    .btnPink{
-        margin: 24px auto !important;
-        
-    }
+    
 }
 /*
 
