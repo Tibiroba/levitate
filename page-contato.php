@@ -9,14 +9,14 @@ get_header();
 <div class="container">
     <div class="row" style="padding:5% 0px;">
         <div class="col-12">
-            <h1 class="fontXl w-100 mb-5 textPink text-center"><?php echo the_title(); ?></h1>
+            <h1 class="font-xxlarge w-100 mb-5 textPink text-center"><?php echo the_title(); ?></h1>
         </div>
         <div class="col-lg-8 col-sm-12">
             <ul class="contatoText">
-                <li class="fontNormal">Estamos aqui para ajudar! Envie um e-mail através do formulário ao lado, para sugestões, dúvidas ou assistência.</li>
-                <li class="fontNormal">Nossa equipe está pronta para garantir que sua experiência com Levitate seja positiva e satisfatória.</li>
-                <li class="fontNormal">Os links seguintes contêm informações que podem ser úteis: <a class="textPink" href="">Dicas Levitate</a> e <a class="textPink" href="">Dúvidas Frequentes</a></li>
-                <li class="fontNormal">Agradecemos por escolher Levitate, em breve, retornaremos o seu contato.</li> 
+                <li class="font-large">Estamos aqui para ajudar! Envie um e-mail através do formulário ao lado, para sugestões, dúvidas ou assistência.</li>
+                <li class="font-large">Nossa equipe está pronta para garantir que sua experiência com Levitate seja positiva e satisfatória.</li>
+                <li class="font-large">Os links seguintes contêm informações que podem ser úteis: <a class="textPink" href="">Dicas Levitate</a> e <a class="textPink" href="">Dúvidas Frequentes</a></li>
+                <li class="font-large">Agradecemos por escolher Levitate, em breve, retornaremos o seu contato.</li> 
             </ul>
         </div>
 

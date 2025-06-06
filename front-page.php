@@ -434,71 +434,77 @@
   </section>
 
 
-
-  <!-- <section class="userFeedback">
+  <section class="userFeedback">
   <div class="container">
     <div class="row">
-      php
-      // Query posts with the 'feedback' meta key
-      $args = array(
-        'post_type' => 'post', // Adjust if you're using a custom post type
-        'meta_query' => array(
-          array(
-            'key' => 'feedback', // Custom meta key to identify feedback posts
-            'value' => '1', // Value to filter feedback posts
-            'compare' => '='
-          )
+      <h2 class="textBlue font-xlarge w-100 fontBold text-center my-3">Surpreenda-se também</h2>
+    <?php
+    // Query posts with the tag 'feedback'
+    $args = array(
+      'post_type' => 'post', // Use the default post type or adjust if needed
+      'tax_query' => array(
+        array(
+          'post_type' => 'post', // Taxonomy for tags
+          'tag'    => 'feedback', // Use the slug of the tag
+           // The tag slug to filter posts
         ),
-        'posts_per_page' => 10, // Limit the number of posts
-      );
-      $feedback_posts = new WP_Query($args);
+      ),
+      'posts_per_page' => 3, // Limit the number of posts
+    );
+    $feedback_posts = new WP_Query($args);
 
-      if ($feedback_posts->have_posts()) :
-        while ($feedback_posts->have_posts()) : $feedback_posts->the_post(); ?>
-          <div class="col-lg-6 col-md-4">
-            <div class="feedback-box">
-              Display featured image 
-              <div class="feedback-photo">
-                php
-                if (has_post_thumbnail()) {
-                  the_post_thumbnail('medium', ['class' => 'img-fluid']);
-                } else {
-                  echo '<img src="' . esc_url(get_template_directory_uri() . '/assets/default-avatar.png') . '" class="img-fluid" alt="Default Image">';
+    if ($feedback_posts->have_posts()) :
+      while ($feedback_posts->have_posts()) : $feedback_posts->the_post(); ?>
+        <div class="col-md-4 col-sm-6">
+          <div class="feedback-box">
+            <!-- Display featured image -->
+            <div class="feedback-photo">
+              <?php
+              if (has_post_thumbnail()) {
+                the_post_thumbnail('medium', ['class' => 'img-fluid']);
+              } else {
+                echo '<img src="' . esc_url(get_template_directory_uri() . '/assets/default-avatar.png') . '" class="img-fluid" alt="Default Image">';
+              }
+              ?>
+            </div>
+
+            <!-- Display post title -->
+            <h3 class="feedback-title textPink my-2"><?php the_title(); ?></h3>
+
+            <!-- Display stars (post meta) -->
+            <div class="feedback-stars my-2">
+              <?php
+              $stars = get_post_meta(get_the_ID(), 'stars', true); // Custom meta for stars
+              if ($stars) {
+                for ($i = 0; $i < $stars; $i++) {
+                  echo '<span class="star font-xlarge">&#9733;</span>'; // Unicode star
                 }
-                ?>
-              </div>
+              } else {
+                echo '<span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>'; // Fallback if stars meta is missing
+              }
+              ?>
+            </div>
 
-               Display post title 
-              <h3 class="feedback-title">php the_title(); ?></h3>
-
-               Display stars (post meta) 
-              <div class="feedback-stars">
-                php
-                $stars = get_post_meta(get_the_ID(), 'stars', true); // Custom meta for stars
-                if ($stars) {
-                  for ($i = 0; $i < $stars; $i++) {
-                    echo '<span class="star">&#9733;</span>'; // Unicode star
-                  }
-                } else {
-                  echo '<p>No star rating available.</p>'; // Fallback if stars meta is missing
-                }
-                ?>
-              </div>
-
-               Display post excerpt 
-              <div class="feedback-content">
-                php the_excerpt(); ?>
-              </div>
+            <!-- Display post excerpt -->
+            <h3 class="custom-title font-large fontBold my-2 textPink">
+            <?php 
+              $title_feedback = get_post_meta(get_the_ID(), 'title_feedback', true); // Retrieve the custom field
+              echo esc_html($title_feedback); // Output the custom field value safely
+            ?>
+          </h3>
+            <div class="feedback-content">
+             <?php the_excerpt(); ?>
             </div>
           </div>
-        php endwhile;
-        wp_reset_postdata(); // Reset the global post object
-      else : ?>
-        <p>No feedback posts available at the moment.</p>
-      php endif; ?>
+        </div>
+      <?php endwhile;
+      wp_reset_postdata(); // Reset the global post object
+    else : ?>
+      <p>No feedback posts available at the moment.</p>
+    <?php endif; ?>
     </div>
   </div>
-</section> -->
+</section>
   
 
     
@@ -655,7 +661,7 @@
       // WooCommerce product loop
       $args = array(
         'post_type' => 'product',
-        'posts_per_page' => 3, // Number of products to display
+        'posts_per_page' => 4, // Number of products to display
       );
 
       $loop = new WP_Query($args);
@@ -677,7 +683,7 @@
                 <?php endif; ?>
               </a>
               <p class="product-title  mt-5">
-                <a class="font-large fontBold textPink" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                <a class="font-large fontBold textPink" href="<?php echo (get_the_ID() == 100) ? '/neutralizador-textil' : ((get_the_ID() == 103) ? '/agua-micelar-levitate' : ((get_the_ID() == 137) ? '/lencos' : get_permalink())); ?></a>
               </p>
 
               <p class="product-short-description fontBold font-large greytext">

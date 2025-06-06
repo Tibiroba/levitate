@@ -23,13 +23,13 @@ do_action( 'woocommerce_before_main_content' );
 
             if ( $product ) {
                 // Display product title
-                echo '<h3 class="product-title textBlue">' . esc_html( $product->get_name() ) . '</h3>';
+                echo '<h3 class="product-title textBlue font-large">' . esc_html( $product->get_name() ) . '</h3>';
 
                 // Display product price
-                echo '<p class="product-price greyText">' . $product->get_price_html() . '</p>';
+                echo '<p class="product-price font-medium greyText">' . $product->get_price_html() . '</p>';
 
                 // Display product short description
-                echo '<div class="product-short-description blueText fontBold">' . $product->get_short_description() . '</div>';
+                echo '<div class="product-short-description font-medium blueText fontBold">' . $product->get_short_description() . '</div>';
 
                 // Display add-to-cart button
                 

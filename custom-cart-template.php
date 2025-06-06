@@ -11,7 +11,7 @@ get_header(); ?>
             <!-- Cart Section -->
             <div class="col-12">
                 <div class="boxCart">
-                    <h2 class="textPink">Carrinho</h2>
+                    <h2 class="textPink font-xlarge">Carrinho</h2>
                     <?php if (WC()->cart->is_empty()) : ?>
                         <div class="">
                             <p>Seu carrinho está vazio.</p>
@@ -31,7 +31,7 @@ get_header(); ?>
             <div class="col-md-8 col-sm-12">
 
 
-                <p class="custom-message text-start fontNormal textBlue">Confira os itens no seu carrinho antes de finalizar a compra.</p>
+                <p class="custom-message text-start font-large textBlue">Confira os itens no seu carrinho antes de finalizar a compra.</p>
                 <div class="cart-items">
                     <?php
                         // Debugging: Check the cart contents
@@ -97,7 +97,7 @@ get_header(); ?>
 
             <div class="col-md-4 col-sm-12">
 
-                <h2 class="textPink">Resumo do Pedido</h2>
+                <h2 class="textPink font-large">Resumo do Pedido</h2>
 
                 <div class="checkout-data p-4 bg-light rounded">
                     <p class="cart-subtotal">
